@@ -175,39 +175,7 @@
       <!-- end Associations -->
       {% endif %}
 
-      {% if site.resume_section_publications %}
-      <!-- begin Publications -->
-      <section class="content-section">
-
-        <header class="section-header">
-          <h2>Publications</h2>
-        </header>
-
-        {% for publication in site.data.publications %}
-        <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/ScholarlyArticle">
-          <h3 class="resume-item-title" itemprop="name">{{ publication.title }}</h3>
-          <h4 class="resume-item-details" itemprop="isPartOf"><a href="{{ publication.conference-url }}">{{ publication.conference-name }}</a></h4>
-          <p class="resume-item-copy">
-            {% for author in publication.authors %}
-              {% capture author_name %}{{author.given-names}} {{author.family-names}}{% endcapture %}
-              {% if author_name == site.resume_name %}<b>{% endif %}
-              {% if author.website %}<a href="{{author.website}}">{{ author_name }}</a>{% else %}{{ author_name }}{% endif %}{% unless forloop.last %}, {% endunless -%}
-              {% if author_name == site.resume_name %}</b>{% endif %}
-            {% endfor %}
-          </p>
-          <ul class="publication-icon-links">
-            {% if publication.doi %}
-            <li class="icon-link-item"><a href="https://doi.org/{{ publication.doi}}" class="icon-link" itemprop="sameAs">{% include icons/icon-pdf.html %}</a></li>
-            {% endif %}
-            <li class="icon-link-item"><a href="{{ publication.bib}}" class="icon-link" itemprop="sameAs">{% include icons/icon-bib.html %}</a></li>
-            <li class="icon-link-item"><a href="{{ publication.url}}" class="icon-link" itemprop="sameAs">{% include icons/icon-pdf-preprint.html %}</a></li>
-          </ul>
-        </div>
-        <br>
-        {% endfor %}
-      </section>
-      <!-- end Publications -->
-      {% endif %}
+      {% include publications.html %}
 
 
       {% if site.resume_section_interests %}
