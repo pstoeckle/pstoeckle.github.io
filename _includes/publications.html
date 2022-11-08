@@ -9,7 +9,7 @@
 {% for publication in site.data.publications %}
 <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/ScholarlyArticle">
     <h3 class="resume-item-title" itemprop="name">{{ publication.title }}</h3>
-    <h4 class="resume-item-details" itemprop="isPartOf"><a href="{{ publication.conference-url }}">{{ publication.conference-name }}</a></h4>
+    <p itemprop="isPartOf">In: <a href="{{ publication.conference-url }}">{{ publication.conference-name }}</a></p>
     <p class="resume-item-copy">
     {% for author in publication.authors %}
         {% capture author_name %}{{author.given-names}} {{author.family-names}}{% endcapture %}
