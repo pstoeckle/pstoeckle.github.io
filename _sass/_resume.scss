@@ -232,3 +232,12 @@
     }
   }
 }
+
+.publication-icon-links {
+  @extend .icon-links;
+  @include media_larger_than_mobile {
+    float: left;
+    border-top: none;
+    padding-top: 0;
+  }
+}
