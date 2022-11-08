@@ -1,6 +1,6 @@
 # Site settings
-title: "Jekyll Resume Template"
-description: "A resume template for Jekyll and GitHub Pages sites."
+title: "CV of Patrick Stöckle"
+description: "The CV of Patrick Stöckle."
 
 # Build settings
 markdown: kramdown
@@ -10,11 +10,11 @@ sass:
 
 # Resume settings
 resume_avatar:                  "true"
-resume_name:                    "Lisa M. Simpson"
-resume_title:                   "VP of Global Communications"
+resume_name:                    "Patrick Stöckle"
+resume_title:                   "Software Engineer – Security Engineer"
 
 # used for the contact button in _layouts/resume.html
-resume_contact_email:           "lisasimpson@youremailaddress.com"
+resume_contact_email:           "patrick.stoeckle@posteo.de"
 
 # the next two items are used for schema itemprops in _layouts/resume.html
 resume_contact_telephone:       "555-7334"
@@ -40,24 +40,18 @@ resume_section_skills:          true
 resume_section_recognition:     true
 resume_section_links:           true
 resume_section_associations:    true
-# resume_section_interests:       true
+resume_section_interests:       true
 
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
 resume_social_links:
-  resume_github_url:            "https://github.com/jglovier/resume-template"
-  resume_twitter_url:           "http://twitter.com/jglovier"
-  resume_dribbble_url:          "https://dribbble.com/jag"
-  # resume_facebook_url:          "insert Facebook URL here"
-  resume_linkedin_url:          "https://www.linkedin.com/in/joelglovier"
-  # resume_instagram_url:         "insert your Instagram URL here"
-  resume_website_url:           "http://joelglovier.com"
-  resume_medium_url:            "https://medium.com/@jglovier"
+  resume_github_url:            "https://github.com/pstoeckle"
+  resume_twitter_url:           "https://twitter.com/p_stoeckle"
+  resume_linkedin_url:          "https://www.linkedin.com/in/patrick-stoeckle/"
+  resume_website_url:           "https://pstoeckle.github.io/"
+  resume_researchgate_url:      "https://www.researchgate.net/profile/Patrick-Stoeckle-2"
+  resume_google_scholar_url:    "https://scholar.google.com/citations?user=rq9oDIoAAAAJ"
 resume_print_social_links:      true
 
 # Design settings
 resume_theme:                   default
-
-# Note: when editing locally, remember to restart
-# your Jekyll server when you edit this file. Changes
-# to _config.yml are only recognized when the server starts
