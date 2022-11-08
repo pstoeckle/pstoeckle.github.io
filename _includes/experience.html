@@ -1,0 +1,19 @@
+{% if site.resume_section_experience %}
+<!-- begin Experience -->
+<section class="content-section">
+
+<header class="section-header">
+    <h2>Experience</h2>
+</header>
+
+{% for job in site.data.experience %}
+<div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+    <h3 class="resume-item-title" itemprop="name"><a href="{{ job.url }}">{{ job.company }}</a></h3>
+    <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
+    <p class="resume-item-copy">{{ job.summary }}</p>
+</div><!-- end of resume-item -->
+{% endfor %}
+
+</section>
+<!-- end Experience -->
+{% endif %}

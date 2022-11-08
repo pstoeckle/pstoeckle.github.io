@@ -1,0 +1,26 @@
+{% if site.resume_section_education %}
+<!-- begin Education -->
+<section class="content-section">
+<header class="section-header">
+    <h2>Education</h2>
+</header>
+
+{% for education in site.data.education %}
+<div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+    <h3 class="resume-item-title" itemprop="name"><a href="{{ education.url }}">{{ education.uni }}</a></h3>
+    <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
+    <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
+    <p class="resume-item-copy" itemprop="description">
+    <ul class="resume-item-list">
+        {% for award in education.awards %}
+        <li>{{ award.award }}</li>
+        {% endfor %}
+    </ul>
+
+
+    <p class="resume-item-copy">{{ education.summary }}</p>
+</div>
+{% endfor %}
+</section>
+<!-- end Education -->
+{% endif %}
