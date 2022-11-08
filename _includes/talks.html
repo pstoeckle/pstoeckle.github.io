@@ -1,0 +1,25 @@
+{% if site.resume_section_talks %}
+<section class="content-section">
+
+<header class="section-header">
+    <h2>Talks</h2>
+</header>
+
+{% for talk in site.data.talks %}
+<div class="resume-item" itemscope itemprop="memberOf" >
+    <h3 class="resume-item-title" itemprop="name">{{ talk.title }}</h3>
+    <p itemprop="isPartOf">Date: {{ talk.date }}</p>
+    <p itemprop="isPartOf">Event: {% if talk.event-link %}<a href="{{ talk.event-link }}">{{ talk.event }}</a>{% else %}{{ talk.event }}{% endif %}</p>
+    <ul class="publication-icon-links">
+        {% if talk.slides %}
+        <li class="icon-link-item"><a href="{{ talk.slides }}" class="icon-link" itemprop="sameAs">{% include icons/icon-slides.html %}</a></li>
+        {% endif %}
+        {% if talk.video %}
+        <li class="icon-link-item"><a href="{{ talk.video}}" class="icon-link" itemprop="sameAs">{% include icons/icon-video.html %}</a></li>
+        {% endif %}
+    </ul>
+</div>
+<br>
+{% endfor %}
+</section>
+{% endif %}
