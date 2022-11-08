@@ -1,12 +1,15 @@
-- company: <a href="https://www.tum.de/">Technical University of Munich (TUM)</a>
+- company: Technical University of Munich (TUM)
+  url: "https://www.tum.de/"
   position: Research Assistant
   duration: November 2017 – Present, Munich
   summary: TODO
-- company: <a href="https://www.3imedia.de/">3iMedia GmbH</a>
+- company: 3iMedia GmbH
+  url:  https://www.3imedia.de/
   position: Software Engineer
   duration: August 2014 – March 2017, Eggenstein-Leopoldshafen
   summary: Web Development, Mobile App Development
-- company: <a href="https://www.schuelerhilfe.de/nachhilfe/ettlingen/">Schülerhilfe Ettlingen</a>
+- company: Schülerhilfe Ettlingen
+  url:  https://www.schuelerhilfe.de/nachhilfe/ettlingen/
   position: Student Tutor
   duration: May 2012 – July 2014, Ettlingen
   summary: Student tutor for Mathematics, Latin Language, and Physics.
