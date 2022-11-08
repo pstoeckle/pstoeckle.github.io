@@ -42,6 +42,7 @@ resume_section_links:           false
 resume_section_associations:    false
 resume_section_interests:       true
 resume_section_publications:    true
+resume_section_talks:           true
 
 # Resume social links
 # uncomment the options you wish to display, and add your own URL
