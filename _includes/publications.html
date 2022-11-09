@@ -9,7 +9,6 @@
 {% for publication in site.data.publications %}
 <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/ScholarlyArticle">
     <h3 class="resume-item-title" itemprop="name">{{ publication.title }}</h3>
-    <p itemprop="isPartOf">In: <a href="{{ publication.conference-url }}">{{ publication.conference-name }}</a></p>
     <p class="resume-item-copy">
     {% for author in publication.authors %}
         {% capture author_name %}{{author.given-names}} {{author.family-names}}{% endcapture %}
@@ -18,6 +17,11 @@
         {% if author_name == site.resume_name %}</b>{% endif %}
     {% endfor %}
     </p>
+    <p itemprop="isPartOf">In: <a href="{{ publication.conference-url }}">{{ publication.conference-name }}</a></p>
+    {% if publication.accepted-papers %}
+        {% assign submitted_float = publication.submitted-papers | times: 1.0 %}
+        <p>Overall Acceptance Rate: {{ publication.accepted-papers }} of {{ publication.submitted-papers}} submissions ({{ publication.accepted-papers | divided_by: submitted_float | times: 100 | round  }}%).</p>
+    {% endif %}
     <ul class="publication-icon-links">
         {% if publication.doi %}
         <li class="icon-link-item"><a href="https://doi.org/{{ publication.doi}}" class="icon-link" itemprop="sameAs">{% include icons/icon-pdf.html %}</a></li>
