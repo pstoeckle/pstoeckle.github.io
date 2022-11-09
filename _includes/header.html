@@ -6,7 +6,6 @@
 
 <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
 
-<!-- To display contact info here, change `display_header_contact_info` value in _config.yml to true -->
 {% if site.display_header_contact_info == 'true' %}
 <div class="header-contact-info">
     <p>{{ site.resume_header_contact_info }}</p>
@@ -28,5 +27,13 @@
 <a class="contact-button not-looking no-print">I'm not looking for work right now.</a>
 {% else %}
 {% endif %}
+
+<div class="navigation-bar">
+    {% for nav_item in site.data.nav %}
+    <div class="navigation-bar-item">
+        <a href="#{{ nav_item.location}}">{{nav_item.title}}</a>
+    </div>
+    {% endfor %}
+</div>
 
 </header>
