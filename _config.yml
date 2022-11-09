@@ -8,6 +8,7 @@ sass:
 
 resume_avatar:                  "true"
 resume_name:                    "Patrick Stöckle"
+resume_name_title:              "M.Sc."
 resume_title:                   "Software Engineer – Security Engineer"
 resume_contact_email:           "patrick.stoeckle@posteo.de"
 
