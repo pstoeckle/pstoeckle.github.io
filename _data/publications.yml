@@ -30,6 +30,7 @@
   conference-name: 'Sicherheit in vernetzten Systemen: 30. DFN-Konferenz'
   conference-url: https://www.dfn-cert.de/veranstaltungen/30Sicherheitskonferenz2023.html
   bib: https://mediatum.ub.tum.de/export/1690560/bibtex
+  lang: de
 - title: Automated Identification of Security-Relevant Configuration Settings Using NLP
   authors:
   - given-names: Patrick
@@ -123,6 +124,7 @@
   conference-name: 'Sicherheit in vernetzten Systemen: 29. DFN-Konferenz'
   conference-url: https://www.dfn-cert.de/veranstaltungen/30Sicherheitskonferenz2023.html
   bib: https://mediatum.ub.tum.de/export/1656799/bibtex
+  lang: de
 - authors:
   - given-names: Patrick
     family-names: Stöckle
