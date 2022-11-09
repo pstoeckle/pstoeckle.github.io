@@ -14,10 +14,8 @@ module Jekyll
         priority :high
         safe true
         def generate(site)
-            hash = %x( git rev-parse --short HEAD ).strip
-            timestamp = %x( git show -s --format=%ci HEAD ).strip
-            site.data['git-hash'] = hash
-            site.data['git-timestamp'] = timestamp
+            timestamp = %x( date +"%Y-%m-%d %H:%M" ).strip
+            site.data['build-timestamp'] = timestamp
         end
     end
 end
