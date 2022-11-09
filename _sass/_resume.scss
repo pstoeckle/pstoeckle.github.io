@@ -61,6 +61,7 @@
       letter-spacing: -.05rem;
       text-align: center;
       margin: 0 0 .5rem;
+      width: 100%;
 
       @include media_larger_than_mobile {
         float: left;
@@ -75,6 +76,7 @@
 }
 
 .icon-links {
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -240,6 +242,7 @@
     border-top: none;
     padding-top: 0;
   }
+  width: auto;
 }
 
 .navigation-bar {
