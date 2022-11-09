@@ -10,6 +10,7 @@
     <h3 class="resume-item-title" itemprop="name">{{ talk.title }}</h3>
     <p itemprop="isPartOf">Date: {{ talk.date }}</p>
     <p itemprop="isPartOf">Event: {% if talk.event-link %}<a href="{{ talk.event-link }}">{{ talk.event }}</a>{% else %}{{ talk.event }}{% endif %}</p>
+    {% if talk.slides or talk.video %}
     <ul class="publication-icon-links">
         {% if talk.slides %}
         <li class="icon-link-item"><a href="{{ talk.slides }}" class="icon-link" itemprop="sameAs">{% include icons/icon-slides.html %}</a></li>
@@ -18,8 +19,9 @@
         <li class="icon-link-item"><a href="{{ talk.video}}" class="icon-link" itemprop="sameAs">{% include icons/icon-video.html %}</a></li>
         {% endif %}
     </ul>
+    <br>
+    {% endif %}
 </div>
-<br>
 {% endfor %}
 </section>
 {% endif %}
