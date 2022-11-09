@@ -18,8 +18,13 @@
 
 // page header styles
 
-.page-header { padding: 1.5rem 0;
-
+.page-header {
+  padding: 1.5rem 0;
+  
+  @include media_mobile {
+    margin-bottom: 160px;
+  }
+  
   .avatar {
     width: 95px;
     max-width: 100%;
@@ -253,10 +258,24 @@
   text-align: center;
   margin-bottom: 1.5rem;
   border-bottom: none;
+  
+  @include media_mobile {
+    height: 200px;
+  }
 
   .navigation-bar-item {
     width: 15%;
     display: inline-block;
     margin-left: 5px;
+    margin-top: 5px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    @include media_mobile {
+      width: 100%;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
   }
 }

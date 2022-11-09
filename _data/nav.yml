@@ -1,12 +1,12 @@
 - location: experience
   title: Experience
+- location: education
+  title: Education
+- location: skills
+  title: Skills
 - location: publications
   title: Publications
 - location: talks
   title: Talks
-- location: education
-  title: Education
 - location: interests
   title: Interests
-- location: skills
-  title: Skills
