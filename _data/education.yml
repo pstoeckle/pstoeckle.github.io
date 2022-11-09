@@ -2,17 +2,28 @@
   url: https://www.tum.de/
   uni: Technical University of Munich (TUM)
   year: November 2022 – Present
-  summary: "Thesis Title: A Holistic Approach for Security Configuration"
+  summary: >
+    Thesis Title: <i>A Holistic Approach for Security Configuration</i><br>
+    Supervisor: <a href='https://www.cs.cit.tum.de/en/sse/people/alexander-pretschner/'>Prof. Dr.
+    Alexander Pretschner</a>"
 - degree: Master of Science, Informatics
   url: https://www.kit.edu/
   uni: <a href="">Karlsruhe Institute of Technology (KIT)
   year: April 2016 – September 2017
-  summary: "Master's thesis's title: <i>Model Versioning with Consistency Conservation in Vitruvius</i> in the context of the <a href='https://github.com/vitruv-tools/Vitruv/wiki'>VITRUVIUS project</a>.<br>Majors: Software Engineering and Software Security<br>Minor: Economics with focus on Game Theory"
+  summary: >
+    Master's thesis's title: <i>Model Versioning with Consistency Conservation in Vitruvius</i> in the context of
+    the <a href='https://github.com/vitruv-tools/Vitruv/wiki'>VITRUVIUS project</a>.<br>
+    Majors: Software Engineering and Software Security<br>
+    Minor: Economics with focus on Game Theory
 - degree: Bachelor of Science, Informatics
   url: https://www.kit.edu/
   uni: Karlsruhe Institute of Technology (KIT)
   year: October 2012 – March 2016
-  summary: "Bachelor's thesis's title: <i>Partikelbasierte Erweiterung und Laufzeitoptimierung der Prädiktion von Posen gesuchter Objekte mittels Implicit Shape Models</i> in the context of the <a href='https://github.com/asr-ros'>Active Scene Recognition project</a>.<br>Minor: Mathematics (Algebra)."
+  summary: >
+    Bachelor's thesis's title: <i>Partikelbasierte Erweiterung und Laufzeitoptimierung der Prädiktion von
+    Posen gesuchter Objekte mittels Implicit Shape Models</i> in the context of the 
+    <a href='https://github.com/asr-ros'>Active Scene Recognition project</a>.<br>
+    Minor: Mathematics (Algebra).
 - degree: Abitur
   url: https://www.eichendorff-gymnasium.de/
   uni: Eichendorff-Gymnasium Ettlingen

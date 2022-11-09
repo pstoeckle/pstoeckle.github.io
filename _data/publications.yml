@@ -65,6 +65,8 @@
   conference-name: 37th IEEE/ACM International Conference on Automated Software Engineering
   conference-url: https://conf.researchr.org/home/ase-2022
   bib: https://mediatum.ub.tum.de/export/1685448/bibtex
+  accepted-papers: 128
+  submitted-papers: 562
 - authors:
     - given-names: Patrick
       family-names: Stöckle
@@ -92,6 +94,8 @@
   conference-name: Twelveth ACM Conference on Data and Application Security and Privacy (CODASPY)
   conference-url: http://codaspy.org/2022/
   bib: https://mediatum.ub.tum.de/export/1656785/bibtex
+  accepted-papers: 65
+  submitted-papers: 357
 - authors:
   - given-names: Patrick
     family-names: Stöckle
@@ -175,3 +179,5 @@
   conference-name: '35th IEEE/ACM International Conference on Automated Software Engineering '
   conference-url: https://conf.researchr.org/home/ase-2020
   bib: https://mediatum.ub.tum.de/export/1594037/bibtex
+  accepted-papers: 37
+  submitted-papers: 312
