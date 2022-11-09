@@ -2,6 +2,9 @@
 {% if site.resume_print_social_links %}
 <ul>
 
+  <!-- Email -->
+  <li><strong>Email</strong>: {{ site.resume_contact_email | encode_email }}</li>
+
   <!-- GitHub link -->
   {% if site.resume_social_links.resume_github_url %}
   <li><strong>Github</strong>: {{ site.resume_social_links.resume_github_url }}</li>
@@ -19,7 +22,12 @@
 
   <!-- ResearchGate link -->
   {% if site.resume_social_links.resume_researchgate_url %}
-  <li><strong>LinkedIn</strong>: {{ site.resume_social_links.resume_researchgate_url }}</li>
+  <li><strong>ResearchGate</strong>: {{ site.resume_social_links.resume_researchgate_url }}</li>
+  {% endif %}
+
+  <!-- Google Scholar link -->
+  {% if site.resume_social_links.resume_google_scholar_url %}
+  <li><strong>Google Scholar</strong>: {{ site.resume_social_links.resume_google_scholar_url }}</li>
   {% endif %}
 
   <!-- Website link -->

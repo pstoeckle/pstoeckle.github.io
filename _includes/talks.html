@@ -11,7 +11,7 @@
     <p itemprop="isPartOf">Date: {{ talk.date }}</p>
     <p itemprop="isPartOf">Event: {% if talk.event-link %}<a href="{{ talk.event-link }}">{{ talk.event }}</a>{% else %}{{ talk.event }}{% endif %}</p>
     {% if talk.slides or talk.video %}
-    <ul class="publication-icon-links">
+    <ul class="publication-icon-links no-print">
         {% if talk.slides %}
         <li class="icon-link-item"><a href="{{ talk.slides }}" class="icon-link" itemprop="sameAs">{% include icons/icon-slides.html %}</a></li>
         {% endif %}
@@ -19,7 +19,7 @@
         <li class="icon-link-item"><a href="{{ talk.video}}" class="icon-link" itemprop="sameAs">{% include icons/icon-video.html %}</a></li>
         {% endif %}
     </ul>
-    <br>
+    <br class="no-print">
     {% endif %}
 </div>
 {% endfor %}
