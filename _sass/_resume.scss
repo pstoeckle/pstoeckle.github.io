@@ -133,7 +133,7 @@
 // resume content styles
 
 .content-section {
-  margin: 0 0 3rem;
+  margin-top: 15px;
 
   .resume-item { margin-bottom: 2rem; }
 
@@ -239,5 +239,21 @@
     float: left;
     border-top: none;
     padding-top: 0;
+  }
+}
+
+.navigation-bar {
+  @include section_border;
+  float: left;
+  padding-top: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-bottom: none;
+
+  .navigation-bar-item {
+    width: 15%;
+    display: inline-block;
+    margin-left: 5px;
   }
 }
