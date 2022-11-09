@@ -1,0 +1,37 @@
+- skill: IT  Security and Security Configuration
+  description: >
+    During my studies, I learned a lot about the theoretical concepts of IT security.
+    Later, in my Ph.D., I was working on a cooperation project between the 
+    Technical University of Munich (TUM) and the <a href="https://www.siemens.com/">Siemens AG</a> on the topic
+    of security configuration.
+    Security misconfigurations enable many cyberattacks and make most of them easier than necessary.
+    In this project, I learned a lot about practical IT security and developed tools to help administrators to
+    harden their systems.
+    If organizations hardened their infrastructure now, they would prevent data breaches and ransomware attacks in the future.
+- skill: Teaching and Supervision
+  description: >
+    I like to teach others and motivate them to learn new things.
+    I was the leading teaching assistant for the course
+    <a href='https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=460596'>Security Engineering</a>
+    at the TUM from 2019 until 2022, with ca. 300 enlisted students every year.
+    During this time, I replaced much of the existing but outdated course material with more recent and relevant content.
+    Furthermore, I introduced hands-on programming exercises;
+    I provided the exercises to the students via the <a href="https://github.com/ls1intum/Artemis">Artemis Learning Platform</a>.
+    Before introducing these programming exercises, there were only a couple of student submissions every week.
+    Afterward, over 80 students submitted, on average, a working solution per week.
+    It still makes me happy that I motivated these students to not only study the theory for the exam but also make
+    their hands dirty and implement the stuff and, thus, learn even more. <br>
+    During my time at the TUM, I supervised 13 bachelor's/master's theses .
+    Although I supervised them, I learned a lot from my students.
+    Supporting others with advice and guidance and seeing how they
+    solved some problems I struggled with or came up with ideas I had never thought about was an incredible experience.
+- skill: Programming and Software Engineering
+  description: >
+    I am an experienced programmer with a lot of experience in different languages.
+    Currently, the language I use the most is Python 🐍, but I learned to program with Java. ☕️
+    During my studies, I also programmed in C, Haskell, TypeScript, C++, Xtend, and Kotlin.
+    Furthermore, I am very passionate about everything around writing the actual software. <br>
+    Version control with git is, for me, a pivotal part of handling any software project, and
+    I worked a lot with continuous integration tools such <a href="https://docs.gitlab.com/ee/ci/">GitLab CI/CD</a>.
+    Thanks to an excellent course at the TUM, I also learned a lot about REST, Microservices, Docker, Protobuff, and Spring.
+    All these concepts, frameworks, and tools can help us as programmers enormously when writing, deploying and maintaining software.

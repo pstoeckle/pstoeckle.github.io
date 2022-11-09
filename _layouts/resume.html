@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="telephone" content="{{ site.resume_contact_telephone }}"/>
+      <meta itemprop="address" content="{{ site.resume_contact_address }}"/>
+
+      {% include header.html %}
+
+      {% include experience.html %}      
+      {% include education.html %}
+      {% include skills.html %}
+      {% include publications.html %}
+      {% include talks.html %}
+      
+      {% include projects.html %}
+      {% include recognition.html %}
+      {% include association.html %}
+      {% include interests.html %}
+      {% include links.html %}
+      {% include social-links.html %}
+
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!-- and guess where these are defined? Yup, you guessed it: the _config.yml file -->
+{% if site.resume_print_social_links %}
+<ul>
+
+  <!-- GitHub link -->
+  {% if site.resume_social_links.resume_github_url %}
+  <li><strong>Github</strong>: {{ site.resume_social_links.resume_github_url }}</li>
+  {% endif %}
+
+  <!-- Twitter link -->
+  {% if site.resume_social_links.resume_twitter_url %}
+  <li><strong>Twitter</strong>: {{ site.resume_social_links.resume_twitter_url }}</li>
+  {% endif %}
+
+  <!-- LinkedIn link -->
+  {% if site.resume_social_links.resume_linkedin_url %}
+  <li><strong>LinkedIn</strong>: {{ site.resume_social_links.resume_linkedin_url }}</li>
+  {% endif %}
+
+  <!-- ResearchGate link -->
+  {% if site.resume_social_links.resume_researchgate_url %}
+  <li><strong>LinkedIn</strong>: {{ site.resume_social_links.resume_researchgate_url }}</li>
+  {% endif %}
+
+  <!-- Website link -->
+  {% if site.resume_social_links.resume_website_url %}
+  <li><strong>Website</strong>: {{ site.resume_social_links.resume_website_url }}</li>
+  {% endif %}
+
+</ul>
+{% endif %}
