@@ -23,6 +23,9 @@
   
   @include media_mobile {
     margin-bottom: 160px;
+    @media print {
+      margin-bottom: 0px;
+    }
   }
   
   .avatar {
