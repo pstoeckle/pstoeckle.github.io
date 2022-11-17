@@ -1,9 +1,8 @@
-name: ""
+name: "Build page with jekyll and node and deploy to GitHub pages."
 
 on:
-  push:
-    branches:
-      - "main"
+  release:
+    types: [published]
 
 jobs:
   deploy:
@@ -11,11 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/pstoeckle/docker-images/node19.1.0-ruby2.7:0.1.4
-
     steps:
-      - name: Dump GitHub context
-        id: github_context_step
-        run: echo '${{ toJSON(github) }}'
       - name: Checkout
         uses: actions/checkout@v3
       - name: Build site with Jekyll and Node
