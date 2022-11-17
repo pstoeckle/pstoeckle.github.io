@@ -23,5 +23,7 @@ jobs:
           npm ci
           node build.js
           ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${{ github.GITHUB_REF}} _site/index.html
-      - name: actions/upload-pages-artifact@v1.0.5
-      - name: actions/deploy-pages@v1.2.2
+      - name: Upload pages
+        uses: actions/upload-pages-artifact@v1.0.5
+      - name: Deploy pages
+        uses: actions/deploy-pages@v1.2.2
