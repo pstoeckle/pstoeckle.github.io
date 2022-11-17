@@ -5,12 +5,11 @@ on:
     branches:
       - "main"
 
-permissions:
-  contents: read
-  id-token: read
-
 jobs:
   deploy:
+    permissions:
+      contents: read
+      id-token: read
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/pstoeckle/docker-images/node19.1.0-ruby2.7:0.1.4
