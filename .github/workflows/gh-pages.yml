@@ -1,0 +1,30 @@
+name: ""
+
+on:
+  push:
+    branches:
+      - "main"
+
+
+jobs:
+  deploy:
+    permissions:
+      contents: read
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build site with Jekyll
+        uses:  docker://ruby:3.1.2
+        run: |
+          bundle install
+          bundle exec jekyll build
+      - name: Build site with Jekyll
+        uses:  docker://node:19.1.0-alpine
+        run: |
+          npm ci
+          node build.js
+          ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${{ github.GITHUB_REF}} _site/index.html
+      - name: actions/upload-pages-artifact@v1.0.5
+      - name: actions/deploy-pages@v1.2.2
