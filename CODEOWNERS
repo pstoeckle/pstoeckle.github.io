@@ -1,0 +1,8 @@
+_data/ @pstoeckle
+_includes/ @pstoeckle
+_layouts/ @pstoeckle
+_sass/ @pstoeckle
+.github/ @pstoeckle
+CODEOWNERS @pstoeckle
+Gemfile @pstoeckle
+package.json @pstoeckle
