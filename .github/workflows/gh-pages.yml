@@ -18,7 +18,7 @@ jobs:
           CURRENT_VERSION: ${{ github.ref_name }}
         run: |
           bundle install
-          bundle exec jekyll build
+          bundle exec jekyll build --baseurl pstoeckle.github.io
           npm ci
           node build.js
           ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${CURRENT_VERSION} _site/index.html
