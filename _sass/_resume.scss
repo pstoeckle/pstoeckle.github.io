@@ -6,13 +6,34 @@
 .section-header {
   @include section_border;
   margin-bottom: 1.5rem;
-
+  $h2-width: 50%;
+  $h2-height: 60px;
+  height: $h2-height + 10px;
+  
   h2 {
     @include sans;
     font-weight: 900;
     font-size: 1.75rem;
     letter-spacing: -.05rem;
     margin: 0;
+    height: $h2-height;
+    float: left;
+    width: $h2-width;
+  }
+
+  h2.first {
+    width: 100%;
+  }
+
+
+  .back-to-top {
+    width: 100% - $h2-width - 10%;
+    text-align: right;
+    height: $h2-height;
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+    text-decoration: none;
   }
 }
 
