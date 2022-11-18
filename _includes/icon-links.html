@@ -21,6 +21,11 @@
   <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_linkedin_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-linkedin.html %}</a></li>
   {% endif %}
 
+  <!-- ORCID link -->
+  {% if site.resume_social_links.resume_google_orcid_url %}
+  <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_google_orcid_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-orcid.html %}</a></li>
+  {% endif %}
+
   <!-- ResearchGate link -->
   {% if site.resume_social_links.resume_researchgate_url %}
   <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_researchgate_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-researchgate.html %}</a></li>
