@@ -10,6 +10,13 @@
   $h2-height: 60px;
   height: $h2-height + 10px;
   
+  @include media_mobile {
+    height: 100px;
+  }
+  @media print {
+    height: 50px;
+  }
+
   h2 {
     @include sans;
     font-weight: 900;
