@@ -1,0 +1,20 @@
+{% if site.resume_section_teaching %}
+<section class="content-section">
+
+<header class="section-header" id="teaching">
+    <h2>Teaching</h2>
+    <a class="back-to-top" href="#">⬆️</a>
+</header>
+
+{% for semester in site.data.teaching %}
+<div class="resume-item" >
+    <h3 class="resume-item-title">{{ semester.semester }}</h3>
+    {% for course in semester.courses %}
+    <h3><a href="{{ course.course-link }}">{{ course.course-name }}</a></h3>
+    <p>University: {% if course.university %}{{ course.university }}{% else %}<a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a>{% endif %}</p>
+    <p>Role: {{ course.role }}</p>
+    {% endfor %}
+</div>
+{% endfor %}
+</section>
+{% endif %}

@@ -53,7 +53,7 @@
   padding: 1.5rem 0;
   
   @include media_mobile {
-    margin-bottom: 160px;
+    margin-bottom: 200px;
     @media print {
       margin-bottom: 0px;
     }
@@ -298,7 +298,7 @@
   }
 
   .navigation-bar-item {
-    width: 15%;
+    width: 13%;
     display: inline-block;
     margin-left: 5px;
     margin-top: 5px;
