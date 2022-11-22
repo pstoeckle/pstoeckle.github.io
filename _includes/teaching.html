@@ -10,7 +10,7 @@
 <div class="resume-item" >
     <h3 class="resume-item-title">{{ semester.semester }}</h3>
     {% for course in semester.courses %}
-    <h3><a href="{{ course.course-link }}">{{ course.course-name }}</a></h3>
+    <h4><a href="{{ course.course-link }}">{{ course.course-name }}</a></h4>
     <p>University: {% if course.university %}{{ course.university }}{% else %}<a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a>{% endif %}</p>
     <p>Role: {{ course.role }}</p>
     {% endfor %}
