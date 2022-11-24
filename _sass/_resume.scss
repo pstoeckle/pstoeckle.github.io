@@ -369,3 +369,15 @@
     }
   }
 }
+
+.pgp-hint {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  a {
+    color: #333;
+  }
+  @include media_mobile {
+    display: none;
+  }
+}
