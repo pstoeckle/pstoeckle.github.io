@@ -1,0 +1,6 @@
+Contact: mailto:patrick.stoeckle@posteo.de
+Expires: 2023-12-31T22:59:00.000Z
+Encryption: https://pstoeckle.github.io/assets/public_key.asc
+Encryption: https://keys.openpgp.org/vks/v1/by-fingerprint/CBB37DF57324F4F1C2412A08B0A74B64D56B96E7
+Preferred-Languages: en, de
+Canonical: https://pstoeckle.github.io/.well-known/security.txt
