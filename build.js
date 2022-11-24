@@ -23,5 +23,6 @@ fs.readFile('_site/index.html', 'utf8', (err, data) => {
 fs.rm('_site/LICENSE', logError)
 fs.rm('_site/README.md', logError)
 fs.rm('_site/build.js', logError)
+fs.rm('_site/CODEOWNERS', logError)
 fs.rm('_site/package.json', (_) =>{})
 fs.rm('_site/package-lock.json', (_) =>{})
