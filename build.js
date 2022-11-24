@@ -22,6 +22,7 @@ fs.readFile('_site/index.html', 'utf8', (err, data) => {
 
 fs.mkdir('_site/.well-known/', logError)
 fs.copyFile('.well-known/security.txt', '_site/.well-known/security.txt', logError)
+fs.copyFile('.well-known/security.txt.asc', '_site/.well-known/security.txt.asc', logError)
 
 fs.rm('_site/LICENSE', logError)
 fs.rm('_site/README.md', logError)
