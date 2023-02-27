@@ -1,7 +1,12 @@
+- company: Siemens AG
+  url: "https://www.tum.de/"
+  position: Research Scientist
+  duration: March 2023 – Present, Munich
+  summary: ""
 - company: Technical University of Munich (TUM)
   url: "https://www.tum.de/"
   position: Research Assistant
-  duration: November 2017 – Present, Munich
+  duration: November 2017 – February 2023, Munich
   summary: >
     I have been working at the <a href="https://www.cs.cit.tum.de/en/sse/homepage/">Chair of Software and Systems Engineering</a>.
     I worked for 4 years on a third-party project about security configuration funded by <a href="https://www.siemens.com/">Siemens</a>.

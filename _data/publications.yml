@@ -34,7 +34,8 @@
 - title: Automated Identification of Security-Relevant Configuration Settings Using NLP
   authors:
   - *patrick
-  - given-names: Theresa
+  - &theresa
+    given-names: Theresa
     family-names: Wasserer
     email: theresa.wasserer@tum.de
     affiliation: Technical University of Munich
@@ -82,4 +83,15 @@
   conference-name: 'Sicherheit in vernetzten Systemen: 30. DFN-Konferenz'
   conference-url: https://www.dfn-cert.de/veranstaltungen/30Sicherheitskonferenz2023.html
   bib: https://mediatum.ub.tum.de/export/1690560/bibtex
+  lang: de
+- authors:
+  - *patrick
+  - *theresa
+  - *bernd
+  - *alex
+  title: Automatisierte Identifikation von sicherheitsrelevanten Konfigurationseinstellungen mittels NLP
+  url: https://dl.gi.de/handle/20.500.12116/40111
+  conference-name: 'Software Engineering 2023'
+  conference-url: https://se-2023.gi.de
+  bib: https://mediatum.ub.tum.de/export/1693648/bibtex
   lang: de
