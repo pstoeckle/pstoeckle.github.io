@@ -71,7 +71,8 @@
   submitted-papers: 357
 - authors:
   - *patrick
-  - given-names: Michael
+  - &michael
+    given-names: Michael
     family-names: Sammereier
     email: michael.sammereier@tum.de
     affiliation: Technical University of Munich
@@ -95,3 +96,14 @@
   conference-url: https://se-2023.gi.de
   bib: https://mediatum.ub.tum.de/export/1693648/bibtex
   lang: de
+- authors:
+  - *patrick
+  - *michael
+  - *bernd
+  - *alex
+  title: Better Safe Than Sorry! Automated Identification of Breaking Security-Configuration Rules
+  url: 'TODO'
+  conference-name: '4th ACM/IEEE International Conference on Automation of Software Test (AST)'
+  conference-url: https://conf.researchr.org/home/ast-2023
+  bib: https://mediatum.ub.tum.de/export/1701864/bibtex
+  lang: en
