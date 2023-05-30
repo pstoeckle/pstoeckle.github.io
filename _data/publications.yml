@@ -1,49 +1,49 @@
 - authors:
-  - &patrick
-    given-names: Patrick
-    family-names: Stöckle
-    email: patrick.stoeckle@tum.de
-    affiliation: Technical University of Munich
-    orcid: 'https://orcid.org/0000-0003-0193-5871'
-    city: Munich
-    country: DE
-  - &bernd
-    given-names: Bernd
-    family-names: Grobauer
-    email: bernd.grobauer@siemens.com
-    affiliation: Siemens AG
-    country: DE
-    orcid: https://orcid.org/0000-0003-0792-3935
-  - &alex
-    given-names: Alexander
-    family-names: Pretschner
-    email: alexander.pretschner@tum.de
-    affiliation: Technical University of Munich
-    orcid: 'https://orcid.org/0000-0002-5573-1201'
-    city: Munich
-    country: DE
-    website: https://www.cs.cit.tum.de/en/sse/people/alexander-pretschner/
-  title: 'Automated Implementation of Windows-related Security-Configuration Guides'
+    - &patrick
+      given-names: Patrick
+      family-names: Stöckle
+      email: patrick.stoeckle@tum.de
+      affiliation: Technical University of Munich
+      orcid: "https://orcid.org/0000-0003-0193-5871"
+      city: Munich
+      country: DE
+    - &bernd
+      given-names: Bernd
+      family-names: Grobauer
+      email: bernd.grobauer@siemens.com
+      affiliation: Siemens AG
+      country: DE
+      orcid: https://orcid.org/0000-0003-0792-3935
+    - &alex
+      given-names: Alexander
+      family-names: Pretschner
+      email: alexander.pretschner@tum.de
+      affiliation: Technical University of Munich
+      orcid: "https://orcid.org/0000-0002-5573-1201"
+      city: Munich
+      country: DE
+      website: https://www.cs.cit.tum.de/en/sse/people/alexander-pretschner/
+  title: "Automated Implementation of Windows-related Security-Configuration Guides"
   doi: 10.1145/3324884.3416540
   url: https://mediatum.ub.tum.de/doc/1594037/1594037.pdf
-  conference-name: '35th IEEE/ACM International Conference on Automated Software Engineering '
+  conference-name: "35th IEEE/ACM International Conference on Automated Software Engineering "
   conference-url: https://conf.researchr.org/home/ase-2020
   bib: https://mediatum.ub.tum.de/export/1594037/bibtex
   accepted-papers: 37
   submitted-papers: 312
 - title: Automated Identification of Security-Relevant Configuration Settings Using NLP
   authors:
-  - *patrick
-  - &theresa
-    given-names: Theresa
-    family-names: Wasserer
-    email: theresa.wasserer@tum.de
-    affiliation: Technical University of Munich
-    country: DE
-    orcid: https://orcid.org/0000-0001-9699-0587
-  - *bernd
-  - *alex
-  collection-title: 'Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering'
+    - *patrick
+    - &theresa
+      given-names: Theresa
+      family-names: Wasserer
+      email: theresa.wasserer@tum.de
+      affiliation: Technical University of Munich
+      country: DE
+      orcid: https://orcid.org/0000-0001-9699-0587
+    - *bernd
+    - *alex
+  collection-title: "Proceedings of the 37th IEEE/ACM International Conference on Automated Software Engineering"
   doi: 10.1145/3551349.3559499
   url: https://mediatum.ub.tum.de/doc/1685448/1685448.pdf
   conference-name: 37th IEEE/ACM International Conference on Automated Software Engineering
@@ -62,7 +62,7 @@
   title: >-
     Hardening with Scapolite: A DevOps-based Approach for Improved Authoring
     and Testing of Security-Configuration Guides in Large-Scale Organizations
-  doi: '10.1145/3508398.3511525'
+  doi: "10.1145/3508398.3511525"
   url: https://mediatum.ub.tum.de/doc/1656785/t3vdie857cw6rgjndz707plcx.CODASPY2022-preprint.pdf
   conference-name: Twelveth ACM Conference on Data and Application Security and Privacy (CODASPY)
   conference-url: http://codaspy.org/2022/
@@ -70,40 +70,40 @@
   accepted-papers: 65
   submitted-papers: 357
 - authors:
-  - *patrick
-  - &michael
-    given-names: Michael
-    family-names: Sammereier
-    email: michael.sammereier@tum.de
-    affiliation: Technical University of Munich
-    country: DE
-  - *bernd
-  - *alex
-  title: Sichere Konfigurationshärtung laufender Systeme
-  url: https://mediatum.ub.tum.de/doc/1690560/1690560.pdf
-  conference-name: 'Sicherheit in vernetzten Systemen: 30. DFN-Konferenz'
-  conference-url: https://www.dfn-cert.de/veranstaltungen/30Sicherheitskonferenz2023.html
-  bib: https://mediatum.ub.tum.de/export/1690560/bibtex
-  lang: de
+    - *patrick
+    - &michael
+      given-names: Michael
+      family-names: Sammereier
+      email: michael.sammereier@tum.de
+      affiliation: Technical University of Munich
+      country: DE
+    - *bernd
+    - *alex
+  title: Better Safe Than Sorry! Automated Identification of Breaking Security-Configuration Rules
+  url: "TODO"
+  conference-name: "4th ACM/IEEE International Conference on Automation of Software Test (AST)"
+  conference-url: https://conf.researchr.org/home/ast-2023
+  bib: https://mediatum.ub.tum.de/export/1701864/bibtex
+  lang: en
 - authors:
-  - *patrick
-  - *theresa
-  - *bernd
-  - *alex
+    - *patrick
+    - *theresa
+    - *bernd
+    - *alex
   title: Automatisierte Identifikation von sicherheitsrelevanten Konfigurationseinstellungen mittels NLP
   url: https://dl.gi.de/handle/20.500.12116/40111
-  conference-name: 'Software Engineering 2023'
+  conference-name: "Software Engineering 2023"
   conference-url: https://se-2023.gi.de
   bib: https://mediatum.ub.tum.de/export/1693648/bibtex
   lang: de
 - authors:
-  - *patrick
-  - *michael
-  - *bernd
-  - *alex
-  title: Better Safe Than Sorry! Automated Identification of Breaking Security-Configuration Rules
-  url: 'TODO'
-  conference-name: '4th ACM/IEEE International Conference on Automation of Software Test (AST)'
-  conference-url: https://conf.researchr.org/home/ast-2023
-  bib: https://mediatum.ub.tum.de/export/1701864/bibtex
-  lang: en
+    - *patrick
+    - *michael
+    - *bernd
+    - *alex
+  title: Sichere Konfigurationshärtung laufender Systeme
+  url: https://mediatum.ub.tum.de/doc/1690560/1690560.pdf
+  conference-name: "Sicherheit in vernetzten Systemen: 30. DFN-Konferenz"
+  conference-url: https://www.dfn-cert.de/veranstaltungen/30Sicherheitskonferenz2023.html
+  bib: https://mediatum.ub.tum.de/export/1690560/bibtex
+  lang: de

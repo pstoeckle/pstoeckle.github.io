@@ -9,8 +9,9 @@
   date: 24.02.2023
 - title: Sichere Konfigurationshärtung laufender Systeme
   event: 30. DFN-Konferenz "Sicherheit in vernetzten Systemen"
-  event-link: https://www.dfn-cert.de/veranstaltungen/30Sicherheitskonferenz2023.html
+  event-link: https://www.dfn-cert.de/veranstaltungen/vortrage-vergangener-workshops/30Siko2023.html
   date: 09.02.2023
+  slides: https://www.dfn-cert.de/dokumente/workshop/2023/FolienStoeckle.pdf
 - title: Sichere Konfiguration leicht(er) gemacht
   event: 2. Online-Informationsveranstaltung für kommunale IT-Dienstleister
   event-link: https://www.lsi.bayern.de/kommunen/veranstaltungen/index.html
