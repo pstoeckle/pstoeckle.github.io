@@ -2,24 +2,28 @@
   url: "https://www.siemens.com/"
   position: Research Scientist
   duration: March 2023 – Present, Munich
-  summary: ""
+  summary: >-
+    Expert for Cloud and Container Security.
+    Our group conducts internal container security trainings to teach people at Siemens how to use container technologies like Docker or Kubernetes securely.
+    Furthermore, we develop approach and tools to support them in doing so.
 - company: Technical University of Munich (TUM)
   url: "https://www.tum.de/"
   position: Research Assistant
   duration: November 2017 – February 2023, Munich
-  summary: >
+  summary: >-
     I have been working at the <a href="https://www.cs.cit.tum.de/en/sse/homepage/">Chair of Software and Systems Engineering</a>.
     I worked for 4 years on a third-party project about security configuration funded by <a href="https://www.siemens.com/">Siemens</a>.
-    Furthermore, I was teaching in the form of central exercises and tutorials, notably as the leading teaching 
+    Furthermore, I was teaching in the form of central exercises and tutorials, notably as the leading teaching
     assistant of the course <a href='https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=460596'>Security Engineering</a>
     from 2019 until 2022.
     I created the practical exercises in this course and graded and explained them.
     Furthermore, I organized the final exam.
 - company: 3iMedia GmbH
   url:  https://www.3imedia.de/
-  position: Software Engineer
+  position: Working Student
   duration: August 2014 – March 2017, Eggenstein-Leopoldshafen
-  summary: Web Development, Mobile App Development
+  summary: >-
+    I developed websites, e.g., with Angular, and built prototypes with new technologies, e.g., things like TypeScript.
 - company: Schülerhilfe Ettlingen
   url:  https://www.schuelerhilfe.de/nachhilfe/ettlingen/
   position: Student Tutor
