@@ -1,7 +1,7 @@
 - skill: IT  Security and Security Configuration
   description: >
     Since the IT security focus in my master's degree, I have been heavily involved with this.
-    Later, in my Ph.D., I worked on a cooperation project between the 
+    Later, in my Ph.D., I worked on a cooperation project between the
     Technical University of Munich (TUM) and <a href="https://www.siemens.com/">Siemens</a> on security configuration.
     Security misconfigurations enable many cyberattacks and make most of them easier than necessary.
     Through the experience of that project, I know very well about practical IT security problems and how to fix them.
@@ -25,12 +25,13 @@
     Supporting others with advice and guidance and seeing how they
     solved some problems I struggled with or came up with ideas I had never thought about was an incredible experience.
 - skill: Programming and Software Engineering
-  description: >
+  description: >-
     I am an experienced programmer with a lot of experience in different languages.
-    Currently, the language I use the most is Python 🐍, but I learned to program with Java ☕️.
+    The language I use the most is Python 🐍, but I have learned how to program with Java ☕️.
     During my studies, I also programmed in C, C++, <a href="https://www.haskell.org/">Haskell</a>,
-    <a href="https://www.typescriptlang.org/">TypeScript</a>, <a href="https://www.eclipse.org/xtend/">Xtend</a>, and <a href="https://kotlinlang.org/">Kotlin</a>.
-    Furthermore, I am very passionate about everything around writing the actual software. <br>
+    <a href="https://www.typescriptlang.org/">TypeScript</a>, <a href="https://www.eclipse.org/xtend/">Xtend</a>, and <a href="https://kotlinlang.org/">Kotlin</a>. <br>
+    The newest member in the club of programming languages I have worked is <a href="https://www.openpolicyagent.org/docs/latest/policy-language/">Rego</a>.
+    Furthermore, I am very passionate about everything around writing the actual software.
     For me, version control with git is a pivotal part of handling any software project, and
     I worked a lot with continuous integration tools such <a href="https://docs.gitlab.com/ee/ci/">GitLab CI/CD</a>.
     Thanks to an excellent course at the TUM, I know a lot about REST, Microservices, Docker, <a href="https://developers.google.com/protocol-buffers">Protocol Buffers</a>, and <a href="https://spring.io/">Spring</a>.
