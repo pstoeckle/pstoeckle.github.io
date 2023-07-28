@@ -16,7 +16,7 @@ jobs:
       - name: Build site with Jekyll and Node
         env:
           CURRENT_VERSION: ${{ github.ref_name }}
-        run: |
+        run: |-
           bundle install
           bundle exec jekyll build --baseurl pstoeckle.github.io
           npm ci
