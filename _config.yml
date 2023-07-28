@@ -11,12 +11,14 @@ resume_name:                    "Patrick Stöckle"
 resume_title:                   "Security Researcher – Software Engineer"
 resume_contact_email:           "patrick.stoeckle@posteo.de"
 
-resume_header_intro: >
+resume_header_intro: >-
   <p>
+  In my job as expert for cloud and container security at Siemens, I help people to use these technologies securely, and develop tools and approaches to support them in doing so.
   As a researcher in IT security and software engineering, I have published several articles as a first author, notably two A* papers.
   During my time at the Technical University of Munich (TUM), I worked 4 years on an industry-funded project about security configuration.
   Furthermore, I was for 4 years (2019 – 2022) the leading teaching assistant for the course Security Engineering.
   Thus, I have profound knowledge of IT security from an industrial and academic perspective.
+  Before that I did my bachelor' and master's degree at the Karlsruhe Institute of Technology (KIT) with a strong focus on IT Security, Software Engineering, and Mathematics.
   As a programmer, I have more than 10 years of programming experience in different languages.
   Furthermore, I can offer excellent software engineering and team collaboration skills.
   </p>
@@ -28,7 +30,7 @@ resume_section_projects:        false
 resume_section_skills:          true
 resume_section_recognition:     false
 resume_section_links:           false
-resume_section_associations:    false
+resume_section_associations:    true
 resume_section_interests:       true
 resume_section_publications:    true
 resume_section_talks:           true
