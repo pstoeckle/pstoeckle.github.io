@@ -2,14 +2,15 @@
 <!-- begin Associations -->
 <section class="content-section">
 
-<header class="section-header">
+<header class="section-header" id="education">
     <h2>Associations</h2>
+    <a class="back-to-top" href="#">⬆️</a>
 </header>
 
 {% for association in site.data.associations %}
 <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/Organization">
     <h3 class="resume-item-title" itemprop="name">{% if association.url %}<a href="{{ association.url }}">{{ association.organization }}</a>{% else %}{{ association.organization }}{% endif %}</h3>
-    <h4 class="resume-item-details" itemprop="description">{{ association.role }} &bull; {{ association.year }}</h4>
+    <h4 class="resume-item-details" itemprop="description">{{ association.year }}</h4>
     <p class="resume-item-copy">{{ association.summary }}</p>
 </div>
 {% endfor %}
