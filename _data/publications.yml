@@ -80,7 +80,7 @@
     - *bernd
     - *alex
   title: Better Safe Than Sorry! Automated Identification of Breaking Security-Configuration Rules
-  url: "TODO"
+  url: https://doi.org/10.1109/AST58925.2023.00013
   conference-name: "4th ACM/IEEE International Conference on Automation of Software Test (AST)"
   conference-url: https://conf.researchr.org/home/ast-2023
   bib: https://mediatum.ub.tum.de/export/1701864/bibtex
