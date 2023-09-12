@@ -42,9 +42,6 @@
   event-link: https://se-2021.tu-bs.de/
   date: 26.02.2021
   slides: https://www.researchgate.net/publication/349428013_PresentationSE_Automated_Implementation_of_Windows-related_Security-_Configuration_Guides
-- title: Open Windows? Attacks on poorly configured Windows 10 instances
-  event: TAPAS@Siemens
-  date: 20.10.2020
 - title: Automated Implementation of Windows-related Security-Configuration Guides
   link: https://conf.researchr.org/details/ase-2020/ase-2020-papers/8/Automated-Implementation-of-Windows-related-Security-Configuration-Guides
   event: ASE'20
