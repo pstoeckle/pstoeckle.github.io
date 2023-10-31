@@ -30,6 +30,7 @@
     Currently, the language I use the most is Python 🐍, but I learned to program with Java ☕️.
     During my studies, I also programmed in C, C++, <a href="https://www.haskell.org/">Haskell</a>,
     <a href="https://www.typescriptlang.org/">TypeScript</a>, <a href="https://www.eclipse.org/xtend/">Xtend</a>, and <a href="https://kotlinlang.org/">Kotlin</a>.
+    Currently, I'm working a lot with <a href="https://www.openpolicyagent.org/docs/latest/policy-language/">Rego</a> which is inspired by Datalog/Prolog.
     Furthermore, I am very passionate about everything around writing the actual software. <br>
     For me, version control with git is a pivotal part of handling any software project, and
     I worked a lot with continuous integration tools such <a href="https://docs.gitlab.com/ee/ci/">GitLab CI/CD</a>.
