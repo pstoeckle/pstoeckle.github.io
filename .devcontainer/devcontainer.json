@@ -1,0 +1,32 @@
+{
+  "name": "Node with bundle",
+  "image": "ghcr.io/pstoeckle/docker-images/node19.1.0-ruby2.7:0.1.4",
+  "postStartCommand": "bundle install",
+  "forwardPorts": [
+    3000,
+    // jekyll
+    4000
+  ],
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "redhat.vscode-yaml"
+      ],
+      "settings": {
+        "files.exclude": {
+          "**/.git": true,
+          "**/.svn": true,
+          "**/.hg": true,
+          "**/CVS": true,
+          "**/.DS_Store": true,
+          "**/Thumbs.db": true,
+          "**/.bundle/": true,
+          "**/.well-known/": true
+        }
+      }
+    }
+  }
+}
