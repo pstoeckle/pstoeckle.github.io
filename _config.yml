@@ -13,7 +13,8 @@ resume_contact_email:           "patrick.stoeckle@posteo.de"
 
 resume_header_intro: >-
   <p>
-  I'm a research scientist at Siemens Technology and working there as an expert for cloud and container security.
+  I'm a research scientist at <a href="https://www.siemens.com/global/en/company/innovation/siemens-core-technologies/cybersecurity-trust.html">Siemens Technology - Cybersecurity & Trust</a>
+  and working there as an expert for cloud and container security.
   As a researcher in IT security and software engineering, I have published several articles as a first author, notably two A* papers.
   During my time at the <a href="https://www.tum.de/en/">Technical University of Munich (TUM)</a>, I worked 4 years on an
   <a href="https://www.cs.cit.tum.de/sse/forschung/hardening-security-configuration/">
