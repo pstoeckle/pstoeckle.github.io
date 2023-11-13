@@ -10,7 +10,7 @@
 <div class="resume-item" itemscope itemprop="memberOf" >
     <h3 class="resume-item-title" itemprop="name">{{ talk.title }}</h3>
     <p itemprop="isPartOf">Date: {{ talk.date }}</p>
-    <p itemprop="isPartOf">Event: {% if talk.event-link %}<a href="{{ talk.event-link }}">{{ talk.event }}</a>{% else %}{{ talk.event }}{% endif %}</p>
+    <p itemprop="isPartOf">Event: {% if talk.event-link %}<a href="{{ talk.event-link }}">{{ talk.event }}{% if talk.is-internal %} (Intranet Only){% endif %}</a>{% else %}{{ talk.event }}{% endif %}</p>
     {% if talk.slides or talk.video %}
     <ul class="publication-icon-links no-print">
         {% if talk.slides %}
