@@ -4,7 +4,7 @@
     "context": ".",
     "dockerfile": "./Dockerfile"
   },
-  "postStartCommand": "bundle install",
+  "postStartCommand": "bundle install && git config --global commit.gpgsign false",
   "forwardPorts": [
     3000,
     // jekyll
