@@ -25,9 +25,11 @@
     {% endif %}
     <ul class="publication-icon-links no-print">
         {% if publication.doi %}
-        <li class="icon-link-item"><a href="https://doi.org/{{ publication.doi}}" class="icon-link" itemprop="sameAs">{% include icons/icon-pdf.html %}</a></li>
+            <li class="icon-link-item"><a href="https://doi.org/{{ publication.doi}}" class="icon-link" itemprop="sameAs">{% include icons/icon-pdf.html %}</a></li>
         {% endif %}
-        <li class="icon-link-item"><a href="{{ publication.bib}}" class="icon-link" itemprop="sameAs">{% include icons/icon-bib.html %}</a></li>
+        {% if publication.bib %}
+            <li class="icon-link-item"><a href="{{ publication.bib}}" class="icon-link" itemprop="sameAs">{% include icons/icon-bib.html %}</a></li>
+        {% endif %}
         <li class="icon-link-item"><a href="{{ publication.url}}" class="icon-link" itemprop="sameAs">{% include icons/icon-pdf-preprint.html %}</a></li>
     </ul>
 </div>
