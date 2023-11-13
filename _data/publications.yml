@@ -108,3 +108,17 @@
   conference-url: https://www.dfn-cert.de/veranstaltungen/30Sicherheitskonferenz2023.html
   bib: https://mediatum.ub.tum.de/export/1690560/bibtex
   lang: de
+- authors:
+  - given-names: Caleb
+    family-names: Eifert
+  - given-names: William
+    family-names: Ferguson
+  - given-names: Johannes
+    family-names: Goerlich
+  - given-names: Daniel
+    family-names: Jasiak
+  - *patrick
+  title: "CIS Microsoft Edge Benchmark v2.0.0"
+  url: "https://workbench.cisecurity.org/files/4737/download/6219"
+  conference-url: https://www.cisecurity.org/benchmark/microsoft_internet_explorer
+  conference-name: "Center for Internet Security (CIS) Benchmarks"
