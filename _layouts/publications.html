@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'unsafe-hashes' 'sha256-/rCCQAYo5nH3kqWMvdaSato3ShxLfLrkODJIMZPKHSg=';">
+    <title>Publications of Patrick Stöckle</title>
+
+    <!-- Google font typography settings - defined in _config.yml -->
+    {% if site.resume_theme == 'default' %}
+    <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+    {% endif %}
+
+    <meta name="description"
+        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+</head>
+
+
+<body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+        {% if site.resume_section_publications %}
+        <!-- begin Publications -->
+        <section class="content-section">
+
+            <header class="section-header" id="publications">
+                <h1>Publications</h1>
+                <a class="back-to-top" href="/">⬅️</a>
+            </header>
+
+            {% for entry in site.data.publications_all %}
+            <h2>{{entry.year}}</h2>
+            {% for publication in entry.publications %}
+            <div class="resume-item" itemscope itemprop="memberOf" itemtype="http://schema.org/ScholarlyArticle">
+                <h3 class="resume-item-title" itemprop="name">{{ publication.title }}</h3>
+                <p class="resume-item-copy">
+                    {% for author in publication.authors %}
+                    {% capture author_name %}{{author.given-names}} {{author.family-names}}{% endcapture %}
+                    {% if author_name == site.resume_name %}<b>{% endif %}
+                        {% if author.website %}<a href="{{author.website}}">{{ author_name }}</a>{% else %}{{
+                        author_name }}{%
+                        endif %}{% unless forloop.last %}, {% endunless -%}
+                        {% if author_name == site.resume_name %}</b>{% endif %}
+                    {% endfor %}
+                </p>
+                <p itemprop="isPartOf">In: <a href="{{ publication.conference-url }}">{{ publication.conference-name
+                        }}</a></p>
+                {% if publication.accepted-papers %}
+                {% assign submitted_float = publication.submitted-papers | times: 1.0 %}
+                <p>Overall Acceptance Rate: {{ publication.accepted-papers }} of {{ publication.submitted-papers}}
+                    submissions
+                    ({{ publication.accepted-papers | divided_by: submitted_float | times: 100 | round }}%).</p>
+                {% endif %}
+                <ul class="publication-icon-links no-print">
+                    {% if publication.doi %}
+                    <li class="icon-link-item"><a href="https://doi.org/{{ publication.doi}}" class="icon-link"
+                            itemprop="sameAs">{% include icons/icon-pdf.html %}</a></li>
+                    {% endif %}
+                    {% if publication.bib %}
+                    <li class="icon-link-item"><a href="{{ publication.bib}}" class="icon-link" itemprop="sameAs">{%
+                            include
+                            icons/icon-bib.html %}</a></li>
+                    {% endif %}
+                    <li class="icon-link-item"><a href="{{ publication.url}}" class="icon-link" itemprop="sameAs">{%
+                            include
+                            icons/icon-pdf-preprint.html %}</a></li>
+                </ul>
+            </div>
+            <br class="no-print">
+            {% endfor %}
+            {% endfor %}
+
+        </section>
+        <!-- end Publications -->
+        {% endif %}
+
+
+        {% include footer.html %}
+    </div>
+</body>
+
+</html>

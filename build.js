@@ -19,6 +19,18 @@ fs.readFile('_site/index.html', 'utf8', (err, data) => {
     });
     fs.writeFile('_site/index.html', result, {},logError )
 })
+fs.readFile('_site/publications.html', 'utf8', (err, data) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    const result = htmlMinifier.minify(data, {
+        minifyCSS: true,
+        collapseWhitespace: true,
+        removeComments: true
+    });
+    fs.writeFile('_site/publications.html', result, {},logError )
+})
 
 fs.mkdir('_site/.well-known/', logError)
 fs.copyFile('.well-known/security.txt', '_site/.well-known/security.txt', logError)
