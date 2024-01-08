@@ -9,7 +9,9 @@ on:
 
 jobs:
   deploy:
-    permissions: write-all
+    permissions:
+      contents: read
+      pages: write
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/pstoeckle/docker-images/node19.1.0-ruby2.7:0.1.4
