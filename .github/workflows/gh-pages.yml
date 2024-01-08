@@ -1,6 +1,9 @@
 name: "Build page with jekyll and node and deploy to GitHub pages."
 
 on:
+  push:
+    branches:
+      - "*"
   release:
     types: [published]
 
@@ -23,7 +26,12 @@ jobs:
           node build.js
           ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${CURRENT_VERSION} _site/index.html
           ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${CURRENT_VERSION} _site/publications.html
+      - name: Fix permissions
+        run: |-
+          chmod -v -R +rX "_site/" | while read line; do
+            echo "::warning title=Invalid file permissions automatically fixed::$line"
+          done
       - name: Upload pages
-        uses: actions/upload-pages-artifact@v1.0.5
+        uses: actions/upload-pages-artifact@v3.0.0
       - name: Deploy pages
-        uses: actions/deploy-pages@v1.2.2
+        uses: actions/deploy-pages@v4.0.2
