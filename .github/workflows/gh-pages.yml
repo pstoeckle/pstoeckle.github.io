@@ -1,9 +1,6 @@
 name: "Build page with jekyll and node and deploy to GitHub pages."
 
 on:
-  push:
-    branches:
-      - "*"
   release:
     types: [published]
 
@@ -22,18 +19,19 @@ jobs:
       - name: Build site with Jekyll and Node
         env:
           CURRENT_VERSION: ${{ github.ref_name }}
-        run: |
+        run: |-
           bundle install
           bundle exec jekyll build --baseurl pstoeckle.github.io
           npm ci
           node build.js
           ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${CURRENT_VERSION} _site/index.html
           ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${CURRENT_VERSION} _site/publications.html
+      # Upload pages needs
+      # - files to have read permission for the current user and the "Others" user role (e.g. 0744, 0644, 0444)
+      # - directories to have read and execute permissions for the current user and the "Others" user role (e.g. 0755, 0555)
       - name: Fix permissions
         run: |-
-          chmod -v -R +rX "_site/" | while read line; do
-            echo "::warning title=Invalid file permissions automatically fixed::$line"
-          done
+          chmod -v -R +rX "_site/"
       - name: Upload pages
         uses: actions/upload-pages-artifact@v3.0.0
       - name: Deploy pages
