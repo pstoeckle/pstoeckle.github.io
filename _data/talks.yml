@@ -3,10 +3,13 @@
   date: 13.12.2023
   event-link: https://future-architecture.siemens.com/talks23/26-continuous-container-security
   is-internal: true
+  slides: https://siemens.sharepoint.com/:b:/r/teams/P0007138/CCT%20Software%20Systems%20and%20Processes/Future%20Architecture%20Conference/2023/26-FACON2023-Continuous%20Container%20Security%20Compliance%20-%20From%20belief%20to%20proof.pdf
+  video: https://siemens.sharepoint.com/:v:/r/teams/VideosofConferences/Shared%20Documents/Future%20Architecture%202023/FACON2023-26-Continuous-Container-Security.mp4
 - title: Experiences on CI pipelines for Container Security
   event: "CSTech – Annual Siemens-internal Symposium on Cybersecurity Technologies"
   date: 05.12.2023
   event-link: https://cybersecurity.code.siemens.io/cstech/workshops23/container-security
+  slides: https://cybersecurity.code.siemens.io/cstech/assets/CSTech23/Container_Security/CSTech2023_Experiences.pdf
   is-internal: true
 - title: Better Safe Than Sorry! Automated Identification of Breaking Security-Configuration Rules
   event: AST'23
