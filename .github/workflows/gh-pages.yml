@@ -6,7 +6,10 @@ on:
 
 jobs:
   deploy:
-    permissions: write-all
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/pstoeckle/docker-images/node19.1.0-ruby2.7:0.1.4
@@ -16,14 +19,20 @@ jobs:
       - name: Build site with Jekyll and Node
         env:
           CURRENT_VERSION: ${{ github.ref_name }}
-        run: |
+        run: |-
           bundle install
           bundle exec jekyll build --baseurl pstoeckle.github.io
           npm ci
           node build.js
           ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${CURRENT_VERSION} _site/index.html
           ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${CURRENT_VERSION} _site/publications.html
+      # Upload pages needs
+      # - files to have read permission for the current user and the "Others" user role (e.g. 0744, 0644, 0444)
+      # - directories to have read and execute permissions for the current user and the "Others" user role (e.g. 0755, 0555)
+      - name: Fix permissions
+        run: |-
+          chmod -v -R +rX "_site/"
       - name: Upload pages
-        uses: actions/upload-pages-artifact@v1.0.5
+        uses: actions/upload-pages-artifact@v3.0.0
       - name: Deploy pages
-        uses: actions/deploy-pages@v1.2.2
+        uses: actions/deploy-pages@v4.0.2
