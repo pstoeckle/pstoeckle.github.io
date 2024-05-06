@@ -1,0 +1,20 @@
+{% if site.resume_section_certification %}
+<!-- begin Certification -->
+<section class="content-section">
+
+    <header class="section-header" id="certifications">
+        <h2>Certifications</h2>
+        <a class="back-to-top" href="#">⬆️</a>
+    </header>
+
+    {% for cert in site.data.certification %}
+    <div class="resume-item">
+        <h3 class="resume-item-title" itemprop="name"><a href="{{ cert.url }}">{{ cert.name }}</a></h3>
+        <img src="{{ cert.badge-url }}" alt="a badge" class="badge no-print" itemprop="image">
+        <h4 class="resume-item-details" itemprop="description"><a href="{{ cert.org-url }}">{{ cert.org }}</a></h4>
+    </div><!-- end of resume-item -->
+    {% endfor %}
+
+</section>
+<!-- end Certification -->
+{% endif %}

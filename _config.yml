@@ -40,6 +40,7 @@ resume_section_interests:       true
 resume_section_publications:    true
 resume_section_talks:           true
 resume_section_teaching:        true
+resume_section_certification:   true
 
 resume_social_links:
   resume_github_url:            "https://github.com/pstoeckle"

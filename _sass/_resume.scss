@@ -348,7 +348,8 @@
   }
 
   .navigation-bar-item {
-    width: 13%;
+    font-size: 14px;
+    width: 11%;
     display: inline-block;
     margin-left: 5px;
     margin-top: 5px;
@@ -374,10 +375,19 @@
   width: 100%;
   font-size: 12px;
   text-align: center;
+
   a {
     color: #333;
   }
+
   @include media_mobile {
     display: none;
   }
+}
+
+.badge {
+  float: left;
+  height: 45px;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
