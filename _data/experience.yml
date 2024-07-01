@@ -3,7 +3,15 @@
   position: Research Scientist
   duration: March 2023 – Present, Munich
   summary: >-
-    In my job as expert for cloud and container security at Siemens, I help people to use these technologies securely, and develop tools and approaches to support them in doing so.
+    In my job as expert for cloud and container security at Siemens, I help
+    people to use these technologies securely.
+    I train people internally, but also externally in collaboration with universities.
+    My colleague <a href="https://hofmannb.dev/">Benedikt Hofmann</a> and I conducted,
+    for example, a <a href="https://www.cs.cit.tum.de/sse/lehre/practical-course-container-security/">
+    practicum on container security at</a> the TUM.
+    Furthermore, we develop tools and approaches to support people at Siemens securing their containerized
+    environments.
+
 - company: Technical University of Munich (TUM)
   url: "https://www.tum.de/"
   position: Research Assistant
