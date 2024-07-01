@@ -1,4 +1,4 @@
-title: "Patrick Stöckle"
+title: "Dr. Patrick Stöckle"
 description: "The CV of Patrick Stöckle."
 
 markdown: kramdown
@@ -7,7 +7,7 @@ sass:
   style: compressed
 
 resume_avatar:                  "true"
-resume_name:                    "Patrick Stöckle"
+resume_name:                    "Dr. Patrick Stöckle"
 resume_title:                   "Security Researcher – Software Engineer"
 resume_contact_email:           "patrick.stoeckle@posteo.de"
 
