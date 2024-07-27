@@ -63,19 +63,6 @@
   date: 25.04.2022
   slides: https://www.researchgate.net/publication/360180389_Presentation_Hardening_with_Scapolite_A_DevOps-based_Approach_for_Improved_Authoring_and_Testing_of_Security-Configuration_Guides_in_Large-Scale_Organizations
   video: https://dl.acm.org/doi/10.1145/3508398.3511525
-- title: "Sicherheits&shy;konfigurationsrichtlinien effizient verwalten und umsetzen: Der Scapolite-Ansatz"
-  link: https://www.dfn-cert.de/veranstaltungen/vortrage-vergangener-workshops/29Siko2022.html
-  event: 29. DFN-Konferenz "Sicherheit in vernetzten Systemen"
-  event-link: https://www.dfn-cert.de/veranstaltungen/vortrage-vergangener-workshops/29Siko2022.html
-  date: 03.02.2022
-  slides: https://www.researchgate.net/publication/358353436_Prasentation_zum_Artikel_Sicherheitskonfigurationsrichtlinien_effizient_verwalten_und_umsetzen_Der_Scapolite-Ansatz
-- title: Automated Implementation of Windows-related Security-Configuration Guides
-  link: https://conf.researchr.org/details/ase-2020/ase-2020-papers/8/Automated-Implementation-of-Windows-related-Security-Configuration-Guides
-  event: ASE'20
-  event-link: https://conf.researchr.org/home/ase-2020
-  date: 23.09.2020
-  slides: https://www.researchgate.net/publication/346782060_Automated_Implementation_of_Windows-related_Security-_Configuration_Guides
-  video: https://youtu.be/gnc6B6GINlY
 - title: Towards deriving automated implementation & verification mechanisms from a single machine-readable requirements specification
   event: SCAPv2 Workshop
   event-link: https://csrc.nist.gov/projects/Security-Content-Automation-Protocol-v2
