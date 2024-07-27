@@ -18,19 +18,6 @@
   is-internal: true
   slides: https://security-architecture-code-public.code.siemens.io/lean-and-mean/#/
   video: https://mylearningworld.siemens.com/web/en/app/toc/lex_auth_014064906560225280138/overview
-- title: Continuous Container Security Compliance - From belief to proof
-  event: "8<sup>th</sup> Future Architecture Conference @ Siemens"
-  date: 13.12.2023
-  event-link: https://future-architecture.siemens.com/talks23/26-continuous-container-security
-  is-internal: true
-  slides: https://siemens.sharepoint.com/:b:/r/teams/P0007138/CCT%20Software%20Systems%20and%20Processes/Future%20Architecture%20Conference/2023/26-FACON2023-Continuous%20Container%20Security%20Compliance%20-%20From%20belief%20to%20proof.pdf
-  video: https://siemens.sharepoint.com/:v:/r/teams/VideosofConferences/Shared%20Documents/Future%20Architecture%202023/FACON2023-26-Continuous-Container-Security.mp4
-- title: Experiences on CI pipelines for Container Security
-  event: "CSTech – Annual Siemens-internal Symposium on Cybersecurity Technologies"
-  date: 05.12.2023
-  event-link: https://cybersecurity.code.siemens.io/cstech/workshops23/container-security
-  slides: https://cybersecurity.code.siemens.io/cstech/assets/CSTech23/Container_Security/CSTech2023_Experiences.pdf
-  is-internal: true
 - title: Better Safe Than Sorry! Automated Identification of Breaking Security-Configuration Rules
   event: AST'23
   date: 15.05.2023
@@ -45,11 +32,6 @@
   event-link: https://www.dfn-cert.de/veranstaltungen/vortrage-vergangener-workshops/30Siko2023.html
   date: 09.02.2023
   slides: https://www.dfn-cert.de/dokumente/workshop/2023/FolienStoeckle.pdf
-- title: Sichere Konfiguration leicht(er) gemacht
-  event: 2. Online-Informationsveranstaltung für kommunale IT-Dienstleister
-  event-link: https://www.lsi.bayern.de/kommunen/veranstaltungen/index.html
-  date: 17.10.2022
-  slides: https://i4.pages.gitlab.lrz.de/conferences-public/slides/2022/LSI/2022_10_17_sichere_konfiguration_leichter_gemacht.pdf
 - title: Automated Identification of Security-Relevant Configuration Settings Using NLP
   link: https://conf.researchr.org/details/ase-2022/ase-2022-industry-showcase/6/Automated-Identification-of-Security-Relevant-Configuration-Settings-Using-NLP
   event: ASE'22
