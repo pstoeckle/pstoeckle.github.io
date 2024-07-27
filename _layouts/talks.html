@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'unsafe-hashes' 'sha256-/rCCQAYo5nH3kqWMvdaSato3ShxLfLrkODJIMZPKHSg=';">
+    <title>Talks</title>
+
+    <!-- Google font typography settings - defined in _config.yml -->
+    {% if site.resume_theme == 'default' %}
+    <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+    {% endif %}
+
+    <meta name="description"
+        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+</head>
+
+
+<body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+        {% if site.resume_section_talks %}
+        <section class="content-section">
+
+            <header class="section-header" id="talks">
+                <h2>Talks</h2>
+                <a class="back-to-top" href="/">⬅️</a>
+            </header>
+
+            {% for entry in site.data.talks_all %}
+            <h2>{{entry.year}}</h2>
+
+            {% for talk in entry.talks %}
+            <div class="resume-item" itemscope itemprop="memberOf">
+                <h3 class="resume-item-title" itemprop="name">{{ talk.title }}</h3>
+                <p itemprop="isPartOf">Date: {{ talk.date }}</p>
+                <p itemprop="isPartOf">Event: {% if talk.event-link %}<a href="{{ talk.event-link }}">{{ talk.event }}{%
+                        if talk.is-internal %} (Intranet Only){% endif %}</a>{% else %}{{ talk.event }}{% endif %}</p>
+                {% if talk.slides or talk.video %}
+                <ul class="publication-icon-links no-print">
+                    {% if talk.slides %}
+                    <li class="icon-link-item"><a href="{{ talk.slides }}" class="icon-link" itemprop="sameAs">{%
+                            include icons/icon-slides.html %}</a></li>
+                    {% endif %}
+                    {% if talk.video %}
+                    <li class="icon-link-item"><a href="{{ talk.video}}" class="icon-link" itemprop="sameAs">{% include
+                            icons/icon-video.html %}</a></li>
+                    {% endif %}
+                </ul>
+                <br class="no-print">
+                {% endif %}
+            </div>
+            {% endfor %}
+            {% endfor %}
+        </section>
+        {% endif %}
+
+
+        {% include footer.html %}
+    </div>
+</body>
+
+</html>
