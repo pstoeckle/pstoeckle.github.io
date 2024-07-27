@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          lfs: true
       - name: Build site with Jekyll and Node
         env:
           CURRENT_VERSION: ${{ github.ref_name }}
