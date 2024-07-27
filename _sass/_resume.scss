@@ -200,6 +200,12 @@
     }
   }
 
+  .resume-item-logo {
+    float: right;
+    margin-left: 20px;
+    width: 100px;
+  }
+
   .resume-item-title {
     @include sans_bold;
     margin: 0 0 .75rem;
