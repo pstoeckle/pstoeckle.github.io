@@ -1,0 +1,41 @@
+- semester: Summer '24
+  courses:
+  - course-name: "Practical Course: Container Security"
+    course-link: https://www.cs.cit.tum.de/sse/lehre/practical-course-container-security/
+    role: Lecturer
+- semester: Summer '22
+  courses:
+  - course-name: Security Engineering
+    course-link: https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/950602629
+    role: Leading Teaching Assistant
+- semester: Summer '21
+  courses:
+  - course-name: Security Engineering
+    course-link: https://campus.tum.de/tumonline/pl/ui/$ctx;/wbLv.wbShowLVDetail?pStpSpNr=950500433
+    role: Leading Teaching Assistant
+- semester: Winter '20/21
+  courses:
+  - course-name: Advanced Topics of Software Engineering
+    course-link: https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950495447
+    role: Teaching Assistant
+  - course-name: "Seminar: Software Quality"
+    course-link: https://www.cs.cit.tum.de/sse/lehre/software-qualitaet/
+    role: Teaching Assistant
+- semester: Summer '20
+  courses:
+  - course-name: Security Engineering
+    course-link: https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950461422
+    role: Leading Teaching Assistant
+  - course-name: "Seminar: Software Quality"
+    course-link: https://www.cs.cit.tum.de/sse/lehre/software-qualitaet/
+    role: Teaching Assistant
+- semester: Winter '19/20
+  courses:
+  - course-name: Advanced Topics of Software Engineering
+    course-link: https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950435440
+    role: Teaching assistant
+- semester: Summer '19
+  courses:
+  - course-name: Security Engineering
+    course-link: https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950401892
+    role: Leading Teaching Assistant
