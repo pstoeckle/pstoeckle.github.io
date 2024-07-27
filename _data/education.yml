@@ -1,4 +1,5 @@
 - degree: Dr. rer. nat., Informatics
+  logo: /assets/tum.png
   url: https://www.tum.de/
   uni: Technical University of Munich (TUM)
   year: November 2017 – June 2024
@@ -8,8 +9,9 @@
     Alexander Pretschner</a>.<br>
     2<sup>nd</sup> supervisor: <a href='https://informatics.tuwien.ac.at/people/juergen-cito'>Associate Prof. Dipl.-Ing. Dr.sc. / BSc Jürgen Cito</a>.
 - degree: Master of Science, Informatics
+  logo: /assets/kit.png
   url: https://www.kit.edu/
-  uni: <a href="">Karlsruhe Institute of Technology (KIT)
+  uni: Karlsruhe Institute of Technology (KIT)
   year: April 2016 – September 2017
   summary: >
     Master's thesis's title: <i>Model Versioning with Consistency Conservation in Vitruvius</i> in the context of
@@ -17,6 +19,7 @@
     Majors: Software Engineering and Software Security.<br>
     Minor: Economics with focus on Game Theory.
 - degree: Bachelor of Science, Informatics
+  logo: /assets/kit.png
   url: https://www.kit.edu/
   uni: Karlsruhe Institute of Technology (KIT)
   year: October 2012 – March 2016

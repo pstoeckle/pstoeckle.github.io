@@ -8,6 +8,9 @@
 
 {% for education in site.data.education %}
 <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+    {% if education.logo %}
+    <img src="{{ education.logo }}" alt="Logo of {{ education.uni }}" class="resume-item-logo" />
+    {% endif %}
     <h3 class="resume-item-title" itemprop="name"><a href="{{ education.url }}">{{ education.uni }}</a></h3>
     <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
     <h5 class="resume-item-details award-title" itemprop="description">{{ education.award }}</h5>
@@ -17,8 +20,6 @@
         <li>{{ award.award }}</li>
         {% endfor %}
     </ul>
-
-
     <p class="resume-item-copy">{{ education.summary }}</p>
 </div>
 {% endfor %}

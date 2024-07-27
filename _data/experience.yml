@@ -1,4 +1,5 @@
 - company: Siemens AG
+  logo: /assets/siemens.png
   url: "https://www.siemens.com/"
   position: Research Scientist
   duration: March 2023 – Present, Munich
@@ -13,6 +14,7 @@
     environments.
 
 - company: Technical University of Munich (TUM)
+  logo: /assets/tum.png
   url: "https://www.tum.de/"
   position: Research Assistant
   duration: November 2017 – February 2023, Munich
@@ -24,11 +26,13 @@
     I created the practical exercises in this course and graded and explained them.
     Furthermore, I organized the final exam.
 - company: 3iMedia GmbH
+  logo: /assets/3imedia.png
   url:  https://www.3imedia.de/
   position: Software Engineer
   duration: August 2014 – March 2017, Eggenstein-Leopoldshafen
   summary: Web Development, Mobile App Development
 - company: Schülerhilfe Ettlingen
+  logo: /assets/schuelerhilfe.jpg
   url:  https://www.schuelerhilfe.de/nachhilfe/ettlingen/
   position: Student Tutor
   duration: May 2012 – July 2014, Ettlingen

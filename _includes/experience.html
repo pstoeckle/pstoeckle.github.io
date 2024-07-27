@@ -8,6 +8,9 @@
 
 {% for job in site.data.experience %}
 <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+    {% if job.logo %}
+    <img src="{{ job.logo }}" alt="Logo of {{ job.company }}" class="resume-item-logo" />
+    {% endif %}
     <h3 class="resume-item-title" itemprop="name"><a href="{{ job.url }}">{{ job.company }}</a></h3>
     <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
     <p class="resume-item-copy">{{ job.summary }}</p>
