@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'unsafe-hashes' 'sha256-/rCCQAYo5nH3kqWMvdaSato3ShxLfLrkODJIMZPKHSg=';">
+    <title>Talks</title>
+
+    <!-- Google font typography settings - defined in _config.yml -->
+    {% if site.resume_theme == 'default' %}
+    <link href='css/fonts.css' rel='stylesheet' type='text/css'>
+    {% endif %}
+
+    <meta name="description"
+        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+</head>
+
+
+<body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+        <section class="content-section">
+
+            <header class="section-header" id="teaching">
+                <h2>Teaching</h2>
+                <a class="back-to-top" href="/">⬅️</a>
+            </header>
+
+            {% for semester in site.data.teaching_all %}
+            <div class="resume-item">
+                <h3 class="resume-item-title">{{ semester.semester }}</h3>
+                {% for course in semester.courses %}
+                <h4><a href="{{ course.course-link }}">{{ course.course-name }}</a></h4>
+                <p>University: {% if course.university %}{{ course.university }}{% else %}<a
+                        href="https://www.tum.de/en/">Technical University of Munich (TUM)</a>{% endif %}</p>
+                <p>Role: {{ course.role }}</p>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </section>
+
+        {% include footer.html %}
+    </div>
+</body>
+
+</html>
