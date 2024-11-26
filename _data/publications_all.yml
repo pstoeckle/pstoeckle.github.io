@@ -45,6 +45,7 @@
           email: michael.sammereier@tum.de
           affiliation: Technical University of Munich
           country: DE
+          website: https://www.linkedin.com/in/michael-sammereier/
         - &bernd
           given-names: Bernd
           family-names: Grobauer
@@ -52,6 +53,7 @@
           affiliation: Siemens AG
           country: DE
           orcid: https://orcid.org/0000-0003-0792-3935
+          website: https://www.linkedin.com/in/bernd-grobauer/
         - &alex
           given-names: Alexander
           family-names: Pretschner
@@ -77,6 +79,7 @@
           affiliation: Technical University of Munich
           country: DE
           orcid: https://orcid.org/0000-0001-9699-0587
+          website: https://www.linkedin.com/in/theresa-wasserer-601b3b184/
         - *bernd
         - *alex
       title: Automatisierte Identifikation von sicherheitsrelevanten Konfigurationseinstellungen mittels NLP
@@ -133,6 +136,7 @@
           family-names: Pruteanu
           email: ionut.pruteanu@siemens.com
           affiliation: Siemens AG
+          website: https://www.linkedin.com/in/pruteanu/
         - *bernd
         - *alex
       title: >-
