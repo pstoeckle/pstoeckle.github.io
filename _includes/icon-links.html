@@ -10,6 +10,11 @@
   <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_github_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-github.html %}</a></li>
   {% endif %}
 
+  <!-- GitLab link -->
+  {% if site.resume_social_links.resume_gitlab_url %}
+  <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_gitlab_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-gitlab.html %}</a></li>
+  {% endif %}
+
   <!-- Twitter link -->
   {% if site.resume_social_links.resume_twitter_url %}
   <li class="icon-link-item"><a href="{{ site.resume_social_links.resume_twitter_url }}" class="icon-link" itemprop="sameAs">{% include icons/icon-twitter.html %}</a></li>

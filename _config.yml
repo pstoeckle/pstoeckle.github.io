@@ -45,6 +45,7 @@ resume_section_certification:   true
 
 resume_social_links:
   resume_github_url:            "https://github.com/pstoeckle"
+  resume_gitlab_url:            "https://gitlab.com/pstoeckle"
   resume_linkedin_url:          "https://www.linkedin.com/in/patrick-stoeckle/"
   resume_website_url:           "https://pstoeckle.github.io/"
   resume_researchgate_url:      "https://www.researchgate.net/profile/Patrick-Stoeckle-2"
