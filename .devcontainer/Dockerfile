@@ -1,6 +1,6 @@
 FROM node:19.1.0
 
-LABEL author="Patrick Stöckle <patrick.stoeckle@posteo.de>"
+LABEL author="Patrick Stöckle <patrick.stoeckle+docker@posteo.de>"
 
 RUN apt-get update -qq \
     && apt-get install -qq --no-install-recommends -y \
