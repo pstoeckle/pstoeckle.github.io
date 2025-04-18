@@ -1,6 +1,6 @@
 # pstoeckle.github.io
 
-Personal website of [Patrick Stöckle](mailto:patrick.stoeckle@posteo.de).
+Personal website of [Patrick Stöckle](mailto:patrick.stoeckle+readme@posteo.de).
 
 You can see the hosted version of this website at [pstoeckle.github.io](https://pstoeckle.github.io).
 
