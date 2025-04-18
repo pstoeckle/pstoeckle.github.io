@@ -1,3 +1,8 @@
+- semester: Summer '25
+  courses:
+  - course-name: "Practical Course: Container Security"
+    course-link: https://www.cs.cit.tum.de/sse/lehre/practical-course-container-security/
+    role: Lecturer
 - semester: Winter '24/25
   courses:
   - course-name: "Practicum of the lecture <i>Sicherheit in verteilten Systemen</i>"
@@ -11,8 +16,7 @@
 - semester: Summer '24
   courses:
   - course-name: "Practical Course: Container Security"
-    # https://web.archive.org/web/20240925125856/https://www.cs.cit.tum.de/sse/lehre/practical-course-container-security/
-    course-link: https://www.cs.cit.tum.de/sse/lehre/practical-course-container-security/
+    course-link: https://web.archive.org/web/20240925125856/https://www.cs.cit.tum.de/sse/lehre/practical-course-container-security/
     role: Lecturer
 - semester: Summer '22
   courses:
