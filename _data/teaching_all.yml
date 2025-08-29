@@ -1,7 +1,20 @@
+- semester: Winter '25/26
+  courses:
+  - course-name: "Lecture <i>Sicherheit in verteilten Systemen</i>"
+    course-link: https://zpa.cs.hm.edu/public/module/213/
+    role: Lecturer
+    university: >-
+      <a href="https://hm.edu/en/index.en.html">
+      HM Hochschule München University of Applied Sciences
+      </a>
+    logo: /assets/hm-logo.png
 - semester: Summer '25
   courses:
   - course-name: "Practical Course: Container Security"
     course-link: https://www.cs.cit.tum.de/sse/lehre/practical-course-container-security/
+    role: Lecturer
+  - course-name: "Guest Lecture on <i>From Chaos to Control - Security Compliance and DevOps</i> at the lecture <i>DevOps: Engineering for Deployment and Operations</i>"
+    course-link: https://github.com/AET-DevOps25/w09-solution
     role: Lecturer
 - semester: Winter '24/25
   courses:
