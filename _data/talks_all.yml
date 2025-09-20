@@ -6,7 +6,6 @@
       event-link: https://xo.code.siemens.io/released/community/deep-dive-gallery/
       is-internal: true
       slides: https://security-architecture-code-public.code.siemens.io/gitlab-ci-cd-optimization/
-      video: https://siemens.sharepoint.com/:v:/r/teams/SiemensXcelerator-CommunityofArchitects/Shared%20Documents/Community%20of%20Architects/Recordings/Community%20of%20Architects-20240724_150443-Besprechungsaufzeichnung.mp4
     - title: A Holistic Approach for Security Configuration
       event: PhD Defense
       event-lint: https://www.cs.cit.tum.de/sse/aktuelles/article/a-holistic-approach-for-security-configuration/
@@ -19,7 +18,6 @@
       event-link: https://wiki.siemens.com/pages/viewpage.action?pageId=668926034
       is-internal: true
       slides: https://security-architecture-code-public.code.siemens.io/lean-and-mean/#/
-      video: https://mylearningworld.siemens.com/web/en/app/toc/lex_auth_014064906560225280138/overview
 - year: 2023
   talks:
     - title: Continuous Container Security Compliance - From belief to proof
@@ -27,8 +25,6 @@
       date: 13.12.2023
       event-link: https://future-architecture.siemens.com/talks23/26-continuous-container-security
       is-internal: true
-      slides: https://siemens.sharepoint.com/:b:/r/teams/P0007138/CCT%20Software%20Systems%20and%20Processes/Future%20Architecture%20Conference/2023/26-FACON2023-Continuous%20Container%20Security%20Compliance%20-%20From%20belief%20to%20proof.pdf
-      video: https://siemens.sharepoint.com/:v:/r/teams/VideosofConferences/Shared%20Documents/Future%20Architecture%202023/FACON2023-26-Continuous-Container-Security.mp4
     - title: Experiences on CI pipelines for Container Security
       event: "CSTech – Annual Siemens-internal Symposium on Cybersecurity Technologies"
       date: 05.12.2023

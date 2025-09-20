@@ -4,7 +4,6 @@
   event-link: https://xo.code.siemens.io/released/community/deep-dive-gallery/
   is-internal: true
   slides: https://security-architecture-code-public.code.siemens.io/gitlab-ci-cd-optimization/
-  video: https://siemens.sharepoint.com/:v:/r/teams/SiemensXcelerator-CommunityofArchitects/Shared%20Documents/Community%20of%20Architects/Recordings/Community%20of%20Architects-20240724_150443-Besprechungsaufzeichnung.mp4
 - title: A Holistic Approach for Security Configuration
   event: PhD Defense
   event-lint: https://www.cs.cit.tum.de/sse/aktuelles/article/a-holistic-approach-for-security-configuration/
@@ -17,7 +16,6 @@
   event-link: https://wiki.siemens.com/pages/viewpage.action?pageId=668926034
   is-internal: true
   slides: https://security-architecture-code-public.code.siemens.io/lean-and-mean/#/
-  video: https://mylearningworld.siemens.com/web/en/app/toc/lex_auth_014064906560225280138/overview
 - title: Better Safe Than Sorry! Automated Identification of Breaking Security-Configuration Rules
   event: AST'23
   date: 15.05.2023
