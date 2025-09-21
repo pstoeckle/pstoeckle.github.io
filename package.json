@@ -1,6 +1,6 @@
 {
   "dependencies": {
     "html-minifier": "^4.0.0",
-    "replace-in-file": "^6.3.5"
+    "replace-in-file": "^8.0.0"
   }
 }
