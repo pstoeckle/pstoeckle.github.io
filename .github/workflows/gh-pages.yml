@@ -1,8 +1,6 @@
 name: "Build page with jekyll and node and deploy to GitHub pages."
 
-on:
-  release:
-    types: [published]
+on: {release: {types: [published]}}
 
 jobs:
   deploy:
@@ -22,12 +20,15 @@ jobs:
         env:
           CURRENT_VERSION: ${{ github.ref_name }}
         run: |-
+          set -eu
           bundle install
           bundle exec jekyll build --baseurl pstoeckle.github.io
           npm ci
           node build.js
           ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${CURRENT_VERSION} _site/index.html
           ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${CURRENT_VERSION} _site/publications.html
+          ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${CURRENT_VERSION} _site/talks.html
+          ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${CURRENT_VERSION} _site/teaching.html
       # Upload pages needs
       # - files to have read permission for the current user and the "Others" user role (e.g. 0744, 0644, 0444)
       # - directories to have read and execute permissions for the current user and the "Others" user role (e.g. 0755, 0555)
