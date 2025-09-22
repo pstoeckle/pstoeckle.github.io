@@ -8,7 +8,7 @@ jobs:
       contents: read
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/pstoeckle/docker-images/node-ruby:24.8.0--3.4.6@sha256:2044119adb08b7323b13cd30d8f7240f497634761b22cc550bf8a75f388bbb58
+      image: ghcr.io/pstoeckle/docker-images/node-ruby:24.8.0--3.4.6@sha256:b83cf63b7672f501bcdb1919e26b52b871d67dcdd696691770970df751b5d768
     steps:
       - name: Checkout
         uses: actions/checkout@v5
