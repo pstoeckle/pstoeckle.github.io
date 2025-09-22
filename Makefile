@@ -5,16 +5,16 @@ serve-local: install-local
 	bundle exec jekyll serve
 
 build-local: install-local
-	budle exec jekyll build
+	bundle exec jekyll build
 
 build-with-container:
-	docker run \
+	podman run \
 		--cap-drop all \
 		--interactive \
 		--tty \
 		--volume "$(shell pwd)":/data \
 		--workdir /data \
-		ghcr.io/pstoeckle/docker-images/node-ruby:24.8.0--3.3@sha256:248fa74b2728eb33ac674498be5bdac3750c08f177ce9a9c10bb8e74034380db \
+		ghcr.io/pstoeckle/docker-images/node-ruby:24.8.0--3.4.6@sha256:b83cf63b7672f501bcdb1919e26b52b871d67dcdd696691770970df751b5d768 \
 		sh -c "bundle exec jekyll serve"
 
 .DEFAULT_GOAL := serve-local
