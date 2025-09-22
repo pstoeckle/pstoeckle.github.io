@@ -1,7 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
+    ":pinSkipCi",
+    ":prConcurrentLimitNone",
+    ":prHourlyLimitNone",
+    ":semanticCommits",
     "config:recommended",
-    "customManagers:dockerfileVersions"
-  ]
+    "customManagers:dockerfileVersions",
+    "docker:pinDigests",
+    "group:allNonMajor"
+  ],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": "every 4 week between the 1 and 49 on Sunday"
+  }
 }
