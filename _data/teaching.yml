@@ -8,9 +8,10 @@
         HM Hochschule München University of Applied Sciences
         </a>
       logo: /assets/hm-logo.png
-    - course-name: TechLab
+    - course-name: Guest Lecture at TechLab
       course-link: https://lfuonline.uibk.ac.at/public/lfuonline_lv.details?sem_id_in=25W&lvnr_id_in=703050
       role: Lecturer
+      logo: /assets/uibk-logo.png
       university: >-
         <a href="https://www.uibk.ac.at/en/">
         University of Innsbruck
