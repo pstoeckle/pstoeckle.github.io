@@ -1,31 +1,38 @@
 - semester: Winter '25/26
   courses:
-  - course-name: "Lecture <i>Sicherheit in verteilten Systemen</i>"
-    course-link: https://zpa.cs.hm.edu/public/module/213/
-    role: Lecturer
-    university: >-
-      <a href="https://hm.edu/en/index.en.html">
-      HM Hochschule München University of Applied Sciences
-      </a>
-    logo: /assets/hm-logo.png
+    - course-name: "Lecture <i>Sicherheit in verteilten Systemen</i>"
+      course-link: https://zpa.cs.hm.edu/public/module/213/
+      role: Lecturer
+      university: >-
+        <a href="https://hm.edu/en/index.en.html">
+        HM Hochschule München University of Applied Sciences
+        </a>
+      logo: /assets/hm-logo.png
+    - course-name: TechLab
+      course-link: https://lfuonline.uibk.ac.at/public/lfuonline_lv.details?sem_id_in=25W&lvnr_id_in=703050
+      role: Lecturer
+      university: >-
+        <a href="https://www.uibk.ac.at/en/">
+        University of Innsbruck
+        </a>
 - semester: Summer '25
   courses:
-  - course-name: "Practical Course: Container Security"
-    course-link: https://www.cs.cit.tum.de/sse/lehre/practical-course-container-security/
-    role: Lecturer
-  - course-name: "Guest Lecture on <i>From Chaos to Control - Security Compliance and DevOps</i> at the lecture <i>DevOps: Engineering for Deployment and Operations</i>"
-    course-link: https://github.com/AET-DevOps25/w09-solution
-    role: Lecturer
+    - course-name: "Practical Course: Container Security"
+      course-link: https://www.cs.cit.tum.de/sse/lehre/practical-course-container-security/
+      role: Lecturer
+    - course-name: "Guest Lecture on <i>From Chaos to Control - Security Compliance and DevOps</i> at the lecture <i>DevOps: Engineering for Deployment and Operations</i>"
+      course-link: https://github.com/AET-DevOps25/w09-solution
+      role: Lecturer
 - semester: Summer '22
   courses:
-  - course-name: Security Engineering
-    course-link: https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/950602629
-    role: Leading Teaching Assistant
+    - course-name: Security Engineering
+      course-link: https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/950602629
+      role: Leading Teaching Assistant
 - semester: Winter '20/21
   courses:
-  - course-name: Advanced Topics of Software Engineering
-    course-link: https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950495447
-    role: Teaching Assistant
-  - course-name: "Seminar: Software Quality"
-    course-link: https://www.cs.cit.tum.de/sse/lehre/software-qualitaet/
-    role: Teaching Assistant
+    - course-name: Advanced Topics of Software Engineering
+      course-link: https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950495447
+      role: Teaching Assistant
+    - course-name: "Seminar: Software Quality"
+      course-link: https://www.cs.cit.tum.de/sse/lehre/software-qualitaet/
+      role: Teaching Assistant
