@@ -1,13 +1,15 @@
-install-local: Gemfile Gemfile.lock
+.PHONY: local-install local-serve local-build container-serve container-build
+
+local-install: Gemfile Gemfile.lock
 	bundle install
 
-serve-local: install-local
+local-serve: install-local
 	bundle exec jekyll serve
 
-build-local: install-local
+local-build: install-local
 	bundle exec jekyll build
 
-build-with-container:
+container-serve:
 	podman run \
 		--cap-drop all \
 		--interactive \
@@ -17,5 +19,15 @@ build-with-container:
 		--workdir /data \
 		ghcr.io/pstoeckle/docker-images/node-ruby:24.11.0--3.4.7@sha256:4aa03e3fa85c7f76d3d908f599c8efb4745a6c5f922aded509aa702e538375ba \
 		sh -c "bundle install && bundle exec jekyll serve --host 0.0.0.0"
+
+container-build:
+	podman run \
+		--cap-drop all \
+		--interactive \
+		--tty \
+		--volume "$(shell pwd)":/data \
+		--workdir /data \
+		ghcr.io/pstoeckle/docker-images/node-ruby:24.11.0--3.4.7@sha256:4aa03e3fa85c7f76d3d908f599c8efb4745a6c5f922aded509aa702e538375ba \
+		sh -c "bundle install && bundle exec jekyll build"
 
 .DEFAULT_GOAL := serve-local
