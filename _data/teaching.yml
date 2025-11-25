@@ -1,5 +1,8 @@
 - semester: Winter '25/26
   courses:
+    - course-name: hackaTUM 2025
+      course-link: https://web.archive.org/web/20251125170912/https://hack.tum.de/
+      role: Member of the organizing team for the Siemens Challenge
     - course-name: "Lecture <i>Sicherheit in verteilten Systemen</i>"
       course-link: https://zpa.cs.hm.edu/public/module/213/
       role: Lecturer
