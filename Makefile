@@ -11,10 +11,11 @@ build-with-container:
 	podman run \
 		--cap-drop all \
 		--interactive \
+		--publish 127.0.0.1:4000:4000 \
 		--tty \
 		--volume "$(shell pwd)":/data \
 		--workdir /data \
-		ghcr.io/pstoeckle/docker-images/node-ruby:24.8.0--3.4.6@sha256:b83cf63b7672f501bcdb1919e26b52b871d67dcdd696691770970df751b5d768 \
-		sh -c "bundle exec jekyll serve"
+		ghcr.io/pstoeckle/docker-images/node-ruby:24.11.0--3.4.7@sha256:4aa03e3fa85c7f76d3d908f599c8efb4745a6c5f922aded509aa702e538375ba \
+		sh -c "bundle install && bundle exec jekyll serve --host 0.0.0.0"
 
 .DEFAULT_GOAL := serve-local
