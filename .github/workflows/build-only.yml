@@ -11,7 +11,7 @@ jobs:
       image: ghcr.io/pstoeckle/docker-images/node-ruby:24.11.0--3.4.7@sha256:4aa03e3fa85c7f76d3d908f599c8efb4745a6c5f922aded509aa702e538375ba
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           lfs: true
       - name: Build site with Jekyll
