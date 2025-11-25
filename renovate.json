@@ -7,8 +7,10 @@
     ":semanticCommits",
     "config:recommended",
     "customManagers:dockerfileVersions",
+    "customManagers:githubActionsVersions",
     "docker:pinDigests",
-    "group:allNonMajor"
+    "group:allNonMajor",
+    "helpers:pinGitHubActionDigests"
   ],
   "lockFileMaintenance": {
     "enabled": true,
