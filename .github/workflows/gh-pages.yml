@@ -23,6 +23,10 @@ jobs:
           set -eu
           bundle install
           bundle exec jekyll build --baseurl pstoeckle.github.io
+          rm _site/*.json
+          rm _site/*.md
+          rm _site/CODEOWNERS
+          rm _site/Makefile
           npm ci
           node build.js
           ./node_modules/.bin/replace-in-file VERSION_PLACEHOLDER ${CURRENT_VERSION} _site/index.html

@@ -40,6 +40,6 @@ container-build:
 		--volume "$(shell pwd)":/data \
 		--workdir /data \
 		ghcr.io/pstoeckle/docker-images/node-ruby:24.11.1--3.4.7@sha256:4b9e8ff592ab2a7269e9543d6f1723143f9de4302038c9155567e291d9e86a90 \
-		sh -c "bundle install && bundle exec jekyll build"
+		sh -c "bundle install && bundle exec jekyll build --baseurl pstoeckle.codeberg.page"
 
 .DEFAULT_GOAL := serve-local
