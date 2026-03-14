@@ -126,3 +126,8 @@
   url: "https://workbench.cisecurity.org/files/4737/download/6219"
   conference-url: https://www.cisecurity.org/benchmark/microsoft_internet_explorer
   conference-name: "Center for Internet Security (CIS) Benchmarks"
+- title: "CIS GitHub Benchmark v1.2.0"
+  role: "Contributor"
+  url: "https://workbench.cisecurity.org/files/7231"
+  conference-url: https://www.cisecurity.org/benchmark/software-supply-chain-security
+  conference-name: "Center for Internet Security (CIS) Benchmarks"

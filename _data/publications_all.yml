@@ -1,3 +1,22 @@
+- year: 2026
+  publications:
+    - title: "CIS GitHub Benchmark v1.2.0"
+      role: "Contributor"
+      url: "https://workbench.cisecurity.org/files/7231"
+      conference-url: https://www.cisecurity.org/benchmark/software-supply-chain-security
+      conference-name: "Center for Internet Security (CIS) Benchmarks"
+- year: 2025
+  publications:
+    - title: "CIS PostgreSQL 15 Benchmark v1.2.0"
+      role: "Contributor"
+      url: "https://workbench.cisecurity.org/files/6096/download/9293"
+      conference-url: https://www.cisecurity.org/benchmark/postgresql
+      conference-name: "Center for Internet Security (CIS) Benchmarks"
+    - title: "CIS Google Chrome Enterprise Core Browser Benchmark v1.0.0"
+      role: "Contributor"
+      url: "https://workbench.cisecurity.org/files/6104/download/9317"
+      conference-url: https://www.cisecurity.org/benchmark/google_chrome
+      conference-name: "Center for Internet Security (CIS) Benchmarks"
 - year: 2024
   publications:
     # CIS Google Chrome
