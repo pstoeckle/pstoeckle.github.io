@@ -18,5 +18,6 @@ jobs:
       - name: Build site with Jekyll
         run: |-
           set -eu
-          bundle install
+          id
+          /home/vscode/.rbenv/shims/bundle install
           bundle exec jekyll build
