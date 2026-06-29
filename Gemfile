@@ -7,3 +7,4 @@ gem "webrick", "~> 1.7"
 
 gem "jekyll-email-protect", "~> 1.1"
 gem "csv"
+gem "bigdecimal"
