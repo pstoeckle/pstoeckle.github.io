@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/pstoeckle/pstoeckle.github.io/devcontainer:0.1.0
+      options: --user 1001:1001
     steps:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
