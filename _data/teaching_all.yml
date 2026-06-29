@@ -1,3 +1,8 @@
+- semester: Summer '26
+  courses:
+    - course-name: "Guest Lecture on <i>Practical DevSecOps: from Secret Management to Container Security</i> at the lecture <i>DevOps: Engineering for Deployment and Operations</i>"
+      course-link: https://aet.cit.tum.de/teaching/26s/devops/
+      role: Lecturer
 - semester: Winter '25/26
   courses:
     - course-name: hackaTUM 2025
