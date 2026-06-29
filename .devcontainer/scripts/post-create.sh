@@ -23,3 +23,5 @@ sudo npm install -g npm
 npm install
 
 bundle install
+mkdir -p $HOME/.local/bin/
+bash -c "$(curl -fsSL https://hermitgrab.app/install.sh)"
