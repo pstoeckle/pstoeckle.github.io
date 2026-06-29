@@ -1,13 +1,9 @@
 name: Build and push devcontainer image
 
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
-    paths:
-      - .devcontainer/build/**
-      - .github/workflows/devcontainer-image.yml
+    tags:
+      - devcontainer-*
 
 permissions:
   contents: read
@@ -37,18 +33,20 @@ jobs:
         id: image
         run: |-
           set -eu
+          version="${GITHUB_REF_NAME#devcontainer-}"
+          echo "${version}" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$'
           owner="$(echo "${GITHUB_REPOSITORY_OWNER}" | tr '[:upper:]' '[:lower:]')"
           repo="$(echo "${GITHUB_REPOSITORY#*/}" | tr '[:upper:]' '[:lower:]')"
-          echo "value=ghcr.io/${owner}/${repo}/devcontainer:latest" >> "${GITHUB_OUTPUT}"
+          echo "value=ghcr.io/${owner}/${repo}/devcontainer:${version}" >> "${GITHUB_OUTPUT}"
 
       - name: Build and push multi-arch devcontainer image
         run: |-
           set -eu
           npx -y @devcontainers/cli build \
-            --workspace-folder . \
             --config .devcontainer/build/devcontainer.json \
             --image-name "${{ steps.image.outputs.value }}" \
+            --label org.opencontainers.image.revision="${GITHUB_SHA}" \
+            --label org.opencontainers.image.source="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}" \
             --platform linux/amd64,linux/arm64 \
             --push \
-            --label org.opencontainers.image.source="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}" \
-            --label org.opencontainers.image.revision="${GITHUB_SHA}"
+            --workspace-folder .
