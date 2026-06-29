@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/pstoeckle/pstoeckle.github.io/devcontainer:0.1.0
+      options: --user 1001:1001
     steps:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
@@ -21,8 +22,8 @@ jobs:
           CURRENT_VERSION: ${{ github.ref_name }}
         run: |-
           set -eu
-          bundle install
-          bundle exec jekyll build --baseurl pstoeckle.github.io
+          /home/vscode/.rbenv/shims/bundle install
+          /home/vscode/.rbenv/shims/bundle exec jekyll build --baseurl pstoeckle.github.io
           rm _site/*.json
           rm _site/*.md
           rm _site/CODEOWNERS
