@@ -1,0 +1,53 @@
+{
+    "containerEnv": {
+        "HISTFILE": "/commandhistory/.zsh_history",
+        "LANG": "en_US.UTF-8",
+        "LANGUAGE": "en_US.UTF-8",
+        "LC_ALL": "en_US.UTF-8"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bierner.markdown-emoji",
+                "DavidAnson.vscode-markdownlint",
+                "redhat.vscode-yaml",
+                "valentjn.vscode-ltex"
+            ],
+            "settings": {
+                "files.exclude": {
+                    "**/.DS_Store": true,
+                    "**/.git": true,
+                    "**/.hg": true,
+                    "**/.markdownlint.yml": true,
+                    "**/.svn": true,
+                    "**/.typos.toml": true,
+                    "**/CHANGELOG.md": true,
+                    "**/cliff.toml": true,
+                    "**/commitlint.config.js": true,
+                    "**/COPYING.md": true,
+                    "**/cspell.config.yaml": true,
+                    "**/CVS": true,
+                    "**/devcontainer-lock.json": true,
+                    "**/EXPORT.yml": true,
+                    "**/LICENSE.md": true,
+                    "**/node_modules": true,
+                    "**/package-lock.json": true,
+                    "**/renovate.json5": true,
+                    "**/Thumbs.db": true
+                }
+            }
+        }
+    },
+    "forwardPorts": [
+        3030
+    ],
+    "image": "ghcr.io/pstoeckle/pstoeckle.github.io/devcontainer/arm64:latest",
+    "mounts": [
+        "source=website-shell-data,target=/commandhistory,type=volume",
+        "source=website-node-modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
+        "source=website-vendor,target=${containerWorkspaceFolder}/_vendor,type=volume"
+    ],
+    "name": "Patrick's Personal Website (Pre-Built)",
+    "postCreateCommand": "sudo chmod +x ${containerWorkspaceFolder}/.devcontainer/scripts/post-create.sh && ${containerWorkspaceFolder}/.devcontainer/scripts/post-create.sh",
+    "postStartCommand": "sudo chmod +x ${containerWorkspaceFolder}/.devcontainer/scripts/post-start.sh && ${containerWorkspaceFolder}/.devcontainer/scripts/post-start.sh",
+}

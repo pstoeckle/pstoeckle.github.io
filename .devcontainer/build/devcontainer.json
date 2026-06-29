@@ -1,0 +1,31 @@
+{
+	"build": {
+		"context": ".",
+		"dockerfile": "Dockerfile"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": "true",
+			"upgradePackages": "true",
+			"userGid": "1001",
+			"username": "vscode",
+			"userUid": "1001"
+		},
+		"ghcr.io/devcontainers/features/git-lfs:1": {},
+		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/postfinance/devcontainer-features/locale:1": {
+			"locale": "en_US"
+		},
+		"ghcr.io/postfinance/devcontainer-features/timezone:1": {
+			"timezone": "Europe/Berlin"
+		},
+		"ghcr.io/rails/devcontainer/features/ruby:2": {
+			"versionManager": "rbenv"
+		}
+	},
+	"name": "Patrick's Personal Website (Build)",
+	"overrideFeatureInstallOrder": [
+		"ghcr.io/devcontainers/features/common-utils"
+	],
+	"remoteUser": "vscode"
+}

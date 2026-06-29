@@ -1,0 +1,1 @@
+FROM node:26-trixie@sha256:15797fbed0f20a0c17c6f00e42b8ebe1574971f986fd8ae15be77acf8c30e185
