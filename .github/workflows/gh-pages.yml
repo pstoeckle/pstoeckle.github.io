@@ -1,13 +1,18 @@
 name: "Build page with jekyll and node and deploy to GitHub pages."
 
-on: {release: {types: [published]}}
+on: { release: { types: [published] } }
+concurrency:
+  group: "deploy-pages"
+  cancel-in-progress: true
+permissions: {}
 
 jobs:
   deploy:
+    name: Build site with Jekyll and Node and deploy to GitHub Pages
     permissions:
       contents: read
-      pages: write
-      id-token: write
+      pages: write # Required to deploy to GitHub Pages
+      id-token: write # Required to authenticate with the GitHub Pages deployment API
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/pstoeckle/pstoeckle.github.io/devcontainer:0.1.0@sha256:beadd709be934c0008b81634f3242e40196eec6248d31334dbce3cfa1c723e43
@@ -17,6 +22,7 @@ jobs:
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
         with:
           lfs: true
+          persist-credentials: false
       - name: Build site with Jekyll and Node
         env:
           CURRENT_VERSION: ${{ github.ref_name }}
