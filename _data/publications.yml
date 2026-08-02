@@ -1,3 +1,35 @@
+# ASE'26
+- authors:
+    - given-names: Jessica
+      family-names: Hösl
+      email: jessica.hoesl@tum.de
+      affiliation: Technical University of Munich
+      orcid: https://orcid.org/0009-0000-3000-9573
+      city: Munich
+      country: DE
+      website: https://www.linkedin.com/in/jessica-hoesl/
+    - given-names: Benedikt
+      family-names: Hofmann
+      email: hofmann.benedikt@siemens.com
+      affiliation: Siemens AG
+      orcid: https://orcid.org/0000-0002-3905-5143
+      city: Munich
+      country: DE
+      website: https://hofmannb.dev/
+    - given-names: Patrick
+      family-names: Stöckle
+      email: patrick.stoeckle@siemens.com
+      affiliation: Siemens AG
+      orcid: https://orcid.org/0000-0003-0193-5871
+      city: Munich
+      country: DE
+  title: "Closing the Gap: Automated Discovery of Secure Dockerfile Reference Standards via Semantic Clustering in Enterprise Inner Source"
+  collection-title: "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE '26), October 12--16, 2026, Munich, Germany"
+  doi: "10.1145/3832783.3834500"
+  url: https://conf.researchr.org/details/ase-2026/ase-2026-industry-showcase/38/Closing-the-Gap-Automated-Discovery-of-Secure-Dockerfile-Reference-Standards-via-Sem
+  conference-name: "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE '26)"
+  conference-url: https://conf.researchr.org/home/ase-2026
+  lang: en
 - authors:
     - &patrick
       given-names: Patrick
@@ -112,20 +144,6 @@
   conference-url: https://www.dfn-cert.de/veranstaltungen/30Sicherheitskonferenz2023.html
   bib: https://mediatum.ub.tum.de/export/1690560/bibtex
   lang: de
-- authors:
-  - given-names: Caleb
-    family-names: Eifert
-  - given-names: William
-    family-names: Ferguson
-  - given-names: Johannes
-    family-names: Goerlich
-  - given-names: Daniel
-    family-names: Jasiak
-  - *patrick
-  title: "CIS Microsoft Edge Benchmark v2.0.0"
-  url: "https://workbench.cisecurity.org/files/4737/download/6219"
-  conference-url: https://www.cisecurity.org/benchmark/microsoft_internet_explorer
-  conference-name: "Center for Internet Security (CIS) Benchmarks"
 - title: "CIS GitHub Benchmark v1.2.0"
   role: "Contributor"
   url: "https://workbench.cisecurity.org/files/7231"
