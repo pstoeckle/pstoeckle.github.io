@@ -80,18 +80,23 @@ jobs:
 
           image_ref="${STEPS_IMAGE_OUTPUTS_VALUE}@${STEPS_DIGEST_OUTPUTS_VALUE}"
 
-          sed -E -i "s|^(\s*image:\s*).*$|\\1${image_ref}|" .github/workflows/build-only.yml
-          sed -E -i "s|^(\s*image:\s*).*$|\\1${image_ref}|" .github/workflows/gh-pages.yml
+          if ! grep -Fq "${image_ref}" .github/workflows/build-only.yml; then
+            echo "::warning file=.github/workflows/build-only.yml::Manual update required: set container image to ${image_ref}."
+          fi
+          if ! grep -Fq "${image_ref}" .github/workflows/gh-pages.yml; then
+            echo "::warning file=.github/workflows/gh-pages.yml::Manual update required: set container image to ${image_ref}."
+          fi
+
           sed -E -i "s|^(\s*\"image\"\s*:\s*\").*(\",\s*)$|\\1${image_ref}\\2|" .devcontainer/devcontainer.json
 
-          if git diff --quiet -- .github/workflows/build-only.yml .github/workflows/gh-pages.yml .devcontainer/devcontainer.json; then
+          if git diff --quiet -- .devcontainer/devcontainer.json; then
             echo "No image reference changes detected."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github/workflows/build-only.yml .github/workflows/gh-pages.yml .devcontainer/devcontainer.json
+          git add .devcontainer/devcontainer.json
           git commit -m ":wrench: chore(devcontainer): update devcontainer image references to ${GITHUB_REF_NAME}"
           git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${default_branch}"
         env:
