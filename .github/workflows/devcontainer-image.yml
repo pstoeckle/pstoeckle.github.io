@@ -64,7 +64,7 @@ jobs:
         id: digest
         run: |-
           set -eu
-          digest="$(docker buildx imagetools inspect "${STEPS_IMAGE_OUTPUTS_VALUE}" | sed -n 's/^Digest: //p' | head -n 1)"
+          digest="$(docker buildx imagetools inspect "${STEPS_IMAGE_OUTPUTS_VALUE}" | sed -n 's/^Digest:[[:space:]]*//p' | head -n 1)"
           [ -n "${digest}" ]
           echo "value=${digest}" >> "${GITHUB_OUTPUT}"
         env:
