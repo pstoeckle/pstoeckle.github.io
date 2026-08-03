@@ -41,7 +41,7 @@
     "forwardPorts": [
         3030
     ],
-    "image": "ghcr.io/pstoeckle/pstoeckle.github.io/devcontainer:0.1.0",
+    "image": "ghcr.io/pstoeckle/pstoeckle.github.io/devcontainer:2026.08.03",
     "mounts": [
         "source=website-shell-data,target=/commandhistory,type=volume",
         "source=website-node-modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
