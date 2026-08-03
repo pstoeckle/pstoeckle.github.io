@@ -32,6 +32,8 @@
       conference-name: "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE '26)"
       conference-url: https://conf.researchr.org/home/ase-2026
       lang: en
+      accepted-papers: 72
+      submitted-papers: 185
     - title: "CIS GitHub Benchmark v1.2.0"
       role: "Contributor"
       url: "https://workbench.cisecurity.org/files/7231"
