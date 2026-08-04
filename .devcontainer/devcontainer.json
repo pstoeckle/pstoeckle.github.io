@@ -15,12 +15,16 @@
             ],
             "settings": {
                 "files.exclude": {
+                    "**/_assets": true,
+                    "**/.bundle": true,
                     "**/.DS_Store": true,
                     "**/.git": true,
                     "**/.hg": true,
                     "**/.markdownlint.yml": true,
+                    "**/.ruby-version": true,
                     "**/.svn": true,
                     "**/.typos.toml": true,
+                    "**/.well-known": true,
                     "**/CHANGELOG.md": true,
                     "**/cliff.toml": true,
                     "**/commitlint.config.js": true,
@@ -29,6 +33,8 @@
                     "**/CVS": true,
                     "**/devcontainer-lock.json": true,
                     "**/EXPORT.yml": true,
+                    "**/Gemfile.lock": true,
+                    "**/LICENSE": true,
                     "**/LICENSE.md": true,
                     "**/node_modules": true,
                     "**/package-lock.json": true,
@@ -49,5 +55,5 @@
     ],
     "name": "Patrick's Personal Website (Pre-Built)",
     "postCreateCommand": "sudo chmod +x ${containerWorkspaceFolder}/.devcontainer/scripts/post-create.sh && ${containerWorkspaceFolder}/.devcontainer/scripts/post-create.sh",
-    "postStartCommand": "sudo chmod +x ${containerWorkspaceFolder}/.devcontainer/scripts/post-start.sh && ${containerWorkspaceFolder}/.devcontainer/scripts/post-start.sh",
+    "postStartCommand": "sudo chmod +x ${containerWorkspaceFolder}/.devcontainer/scripts/post-start.sh && ${containerWorkspaceFolder}/.devcontainer/scripts/post-start.sh"
 }
