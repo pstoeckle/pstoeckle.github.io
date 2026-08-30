@@ -128,7 +128,7 @@
   position: relative;
   top: 4px;
   text-align: center;
-  border-top: 2px solid #c7c7c7;
+  border-top: 2px solid var(--border-color);
   padding-top: .4rem;
 
   @include media_larger_than_mobile {
@@ -146,7 +146,7 @@
     display: inline-block;
 
     &:hover .icon path {
-      fill: #333;
+      fill: var(--text-color);
       @include transition(all .2s ease);
     }
   }
@@ -158,7 +158,7 @@
 
 .contact-button {
   @include border-radius(3px);
-  background-color: #efefef;
+  background-color: var(--button-background-color);
   text-decoration: none;
   text-align: center;
   display: block;
@@ -166,13 +166,13 @@
   width: 220px;
   font-size: 1.375rem;
   @include sans_light;
-  color: #333;
+  color: var(--text-color);
   line-height: 55px;
   @include transition(all .2s ease);
 
   &:hover {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--button-hover-background-color);
+    color: var(--button-hover-text-color);
   }
 
   &.not-looking {
@@ -189,7 +189,7 @@
     margin-bottom: 2rem;
 
     a {
-      color: #333;
+      color: var(--text-color);
     }
 
     h4 {
@@ -229,13 +229,13 @@
   .resume-item-copy,
   .resume-item-list {
     a {
-      color: #333;
+      color: var(--text-color);
       text-decoration: none;
       border-bottom: 1px solid;
 
       &:hover {
         border-bottom: none;
-        color: #9c9c9c;
+        color: var(--link-hover-color);
       }
     }
   }
@@ -248,7 +248,7 @@
 // footer styles
 
 .page-footer {
-  border-top: 4px solid #c7c7c7;
+  border-top: 4px solid var(--border-color);
   padding-top: 1.5rem;
   text-align: center;
   margin-bottom: 3rem;
@@ -256,11 +256,11 @@
   .footer-line {
     margin: 0;
     font-size: .875rem;
-    color: #999;
+    color: var(--muted-text-color);
 
     >a {
       font-weight: 700;
-      color: #333;
+      color: var(--text-color);
     }
   }
 }
@@ -367,12 +367,12 @@
 
     a:link {
       text-decoration: none;
-      color: #333;
+      color: var(--text-color);
     }
 
     a:visited {
       text-decoration: none;
-      color: #333;
+      color: var(--text-color);
     }
   }
 }
@@ -383,7 +383,7 @@
   text-align: center;
 
   a {
-    color: #333;
+    color: var(--text-color);
   }
 
   @include media_mobile {
@@ -396,4 +396,26 @@
   height: 45px;
   margin-right: 10px;
   margin-bottom: 5px;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background: var(--button-background-color);
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--button-hover-background-color);
+    color: var(--button-hover-text-color);
+  }
 }
