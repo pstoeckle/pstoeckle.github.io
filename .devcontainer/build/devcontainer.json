@@ -4,6 +4,7 @@
 		"dockerfile": "Dockerfile"
 	},
 	"features": {
+		"ghcr.io/devcontainers-extra/features/ripgrep:1": {},
 		"ghcr.io/devcontainers/features/common-utils:2": {
 			"installZsh": "true",
 			"upgradePackages": "true",
@@ -13,6 +14,7 @@
 		},
 		"ghcr.io/devcontainers/features/git-lfs:1": {},
 		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/michidk/devcontainers-features/typos:1": {},
 		"ghcr.io/postfinance/devcontainer-features/locale:1": {
 			"locale": "en_US"
 		},
