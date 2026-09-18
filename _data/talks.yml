@@ -1,21 +1,18 @@
-- title: Gitlab CI/CD Optimization
-  event: Siemens XO Community of Architects Deep Dive
-  date: 24.07.2024
-  event-link: https://xo.code.siemens.io/released/community/deep-dive-gallery/
-  is-internal: true
-  slides: https://security-architecture-code-public.code.siemens.io/gitlab-ci-cd-optimization/
+- title: >-
+    Secure LLM-Assisted Software Engineering: From Dockerfiles to CIS Hardening
+  event: LLM Software Development Winter School
+  event-link: https://llmsoftwaredev.github.io/2026/
+  date: 09.10.2026
+- title: >-
+    Closing the Gap: Automated Discovery of Secure Dockerfile Reference Standards via Semantic Clustering in Enterprise Inner Source
+  event: ASE'26
+  event-link: https://conf.researchr.org/home/ase-2026
+  date: 15.10.2026
 - title: A Holistic Approach for Security Configuration
   event: PhD Defense
   event-lint: https://www.cs.cit.tum.de/sse/aktuelles/article/a-holistic-approach-for-security-configuration/
   date: 28.06.2024
   slides: '/assets/2024_06_28_ps.pdf'
-- title: >-
-    Building Lean and Mean: Using Minimized Container Images to Improve the Security of Containerized Applications and Speed Up CI/CD Pipelines
-  date: 28.05.2024
-  event: Siemens PaSS-Time Series
-  event-link: https://wiki.siemens.com/pages/viewpage.action?pageId=668926034
-  is-internal: true
-  slides: https://security-architecture-code-public.code.siemens.io/lean-and-mean/#/
 - title: Better Safe Than Sorry! Automated Identification of Breaking Security-Configuration Rules
   event: AST'23
   date: 15.05.2023
@@ -30,12 +27,6 @@
   event-link: https://www.dfn-cert.de/veranstaltungen/vortrage-vergangener-workshops/30Siko2023.html
   date: 09.02.2023
   slides: https://www.dfn-cert.de/dokumente/workshop/2023/FolienStoeckle.pdf
-- title: Automated Identification of Security-Relevant Configuration Settings Using NLP
-  link: https://conf.researchr.org/details/ase-2022/ase-2022-industry-showcase/6/Automated-Identification-of-Security-Relevant-Configuration-Settings-Using-NLP
-  event: ASE'22
-  event-link: https://conf.researchr.org/home/ase-2022
-  date: 11.10.2022
-  slides: https://www.researchgate.net/publication/364305558_Automated_Identification_of_Security-Relevant_Configuration_Settings_Using_NLP
 - title: Hardening with Scapolite
   link: http://www.codaspy.org/2022/program.html
   event: CODASPY'22
