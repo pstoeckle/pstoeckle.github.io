@@ -13,7 +13,7 @@ jobs:
       contents: read
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/pstoeckle/pstoeckle.github.io/devcontainer:2026.08.03@sha256:2daee82359b43d013b04a732fb3cef45e3263b88c09e8db31f26934850c83dd1
+      image: ghcr.io/pstoeckle/pstoeckle.github.io/devcontainer:2026.09.18@sha256:d4fa74a4b7001ba9246f1faf0f5a49530cd68b4a1353c31ae065252275a6eb17
       options: --user 1001:1001
     steps:
       - name: Checkout
