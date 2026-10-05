@@ -1,15 +1,20 @@
 - year: 2026
   talks:
     - title: >-
-        Secure LLM-Assisted Software Engineering: From Dockerfiles to CIS Hardening
-      event: LLM Software Development Winter School
-      event-link: https://llmsoftwaredev.github.io/2026/
-      date: 09.10.2026
+        A brief history of security configuration
+      event: CONFLANG'26
+      event-link: https://conf.researchr.org/home/ase-2026/conflang-2026
+      date: 12.10.2026
     - title: >-
         Closing the Gap: Automated Discovery of Secure Dockerfile Reference Standards via Semantic Clustering in Enterprise Inner Source
       event: ASE'26
       event-link: https://conf.researchr.org/home/ase-2026
       date: 15.10.2026
+    - title: >-
+        Secure LLM-Assisted Software Engineering: From Dockerfiles to CIS Hardening
+      event: LLM Software Development Winter School
+      event-link: https://llmsoftwaredev.github.io/2026/
+      date: 09.10.2026
 - year: 2024
   talks:
     - title: A Holistic Approach for Security Configuration
