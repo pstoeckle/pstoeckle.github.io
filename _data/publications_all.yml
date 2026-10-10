@@ -34,6 +34,7 @@
       lang: en
       accepted-papers: 72
       submitted-papers: 185
+      bib: ./assets/10.1145/3832783.3834500.bib
     - title: "CIS GitHub Benchmark v1.2.0"
       role: "Contributor"
       url: "https://workbench.cisecurity.org/files/7231"
@@ -53,6 +54,20 @@
       conference-name: "Center for Internet Security (CIS) Benchmarks"
 - year: 2024
   publications:
+    - authors:
+        - &patrick
+          given-names: Patrick
+          family-names: Stöckle
+          email: patrick.stoeckle@tum.de
+          affiliation: Technical University of Munich
+          orcid: "https://orcid.org/0000-0003-0193-5871"
+          city: Munich
+          country: DE
+      title: "A Holistic Approach for Security Configuration"
+      url: https://mediatum.ub.tum.de/doc/1720520/1720520.pdf
+      conference-name: "PhD thesis, Technical University of Munich (TUM)"
+      conference-url: https://mediatum.ub.tum.de/?id=1720520
+      bib: https://mediatum.ub.tum.de/export/1720520/bibtex
     # CIS Google Chrome
     - authors:
         - given-names: Jordan
@@ -65,14 +80,7 @@
           family-names: Clark
         - given-names: Joe
           family-names: Goerlich
-        - &patrick
-          given-names: Patrick
-          family-names: Stöckle
-          email: patrick.stoeckle@tum.de
-          affiliation: Technical University of Munich
-          orcid: "https://orcid.org/0000-0003-0193-5871"
-          city: Munich
-          country: DE
+        - *patrick
         - given-names: John
           family-names: Mahlman
         - given-names: Joseph

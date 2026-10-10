@@ -23,6 +23,7 @@
       orcid: https://orcid.org/0000-0003-0193-5871
       city: Munich
       country: DE
+  bib: ./assets/10.1145/3832783.3834500.bib
   title: "Closing the Gap: Automated Discovery of Secure Dockerfile Reference Standards via Semantic Clustering in Enterprise Inner Source"
   collection-title: "Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE '26), October 12--16, 2026, Munich, Germany"
   doi: "10.1145/3832783.3834500"
@@ -41,6 +42,13 @@
       orcid: "https://orcid.org/0000-0003-0193-5871"
       city: Munich
       country: DE
+  title: "A Holistic Approach for Security Configuration"
+  url: https://mediatum.ub.tum.de/doc/1720520/1720520.pdf
+  conference-name: "PhD thesis, Technical University of Munich (TUM)"
+  conference-url: https://mediatum.ub.tum.de/?id=1720520
+  bib: https://mediatum.ub.tum.de/export/1720520/bibtex
+- authors:
+    - *patrick
     - &bernd
       given-names: Bernd
       family-names: Grobauer
