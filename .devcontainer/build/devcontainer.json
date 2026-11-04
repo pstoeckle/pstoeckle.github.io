@@ -14,6 +14,11 @@
 		},
 		"ghcr.io/devcontainers/features/git-lfs:1": {},
 		"ghcr.io/devcontainers/features/git:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"extensions": "github/gh-actions-lock",
+			// renovate: datasource=github-releases depName=cli/cli packageName=cli/cli
+			"version": "2.103.3"
+		},
 		"ghcr.io/michidk/devcontainers-features/typos:1": {},
 		"ghcr.io/postfinance/devcontainer-features/locale:1": {
 			"locale": "en_US"
