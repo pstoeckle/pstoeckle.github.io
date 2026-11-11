@@ -1,7 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "html-minifier": "5.0.1",
+    "html-minifier": "5.1.0",
     "replace-in-file": "9.0.0"
   }
 }
